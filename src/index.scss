@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Gilroy|Montserrat&display=swap");
+@import url("./zeroing.scss");
+@import url("./components/Header/header.scss");
+@import url("./components/Hero/hero.scss");
+@import "./variables";
+
+
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 10px;
+  }
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+}

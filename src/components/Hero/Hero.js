@@ -1,22 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 import Instagram from "../../images/hero/Inst.svg";
 import Phone from "../../images/hero/Phone.svg";
 import Facebook from "../../images/hero/Facebook.svg";
 
+const listArr = [
+  {
+    img: Instagram,
+    link: "/instagram",
+    alt: "Instagram",
+    size: 35,
+  },
+  { img: Phone, link: "/phone", alt: "Phone", size: 35 },
+  { img: Facebook, link: "/facebook", alt: "Facebook", size: 35 },
+];
 const Hero = () => {
-  const listArr = [
-    {
-      img: Instagram,
-      link: "/instagram",
-      alt: "Instagram",
-      size: 35,
-    },
-    { img: Phone, link: "/phone", alt: "Phone", size: 35 },
-    { img: Facebook, link: "/facebook", alt: "Facebook", size: 35 },
-  ];
-
   return (
     <section className="hero">
       <div className="container">
@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="hero__social-block">
           <ul className="hero-social__list hero-social-list ">
             {listArr.map((element) => (
-              <li className="hero-social-list__item">
+              <li className="hero-social-list__item" key={element.link}>
                 <Link className="hero-social__link" to={element.link}>
                   <img
                     className="hero-social__img"

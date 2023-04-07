@@ -1,0 +1,14 @@
+@mixin font {
+  font-family: $Gilroy;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.14;
+  letter-spacing: 0em;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

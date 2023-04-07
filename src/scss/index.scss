@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Gilroy|Montserrat&display=swap");
 @import url("./zeroing.scss");
-@import url("./components/Header/header.scss");
-@import url("./components/Hero/hero.scss");
+@import url("../components/Header/header.scss");
+@import url("../components/Hero/hero.scss");
 @import "./variables";
-
+@import "./mixins";
 
 body {
-  font-family: "Gilroy", sans-serif;
+  @include font;
 }
 
 .container {
@@ -20,5 +20,5 @@ body {
 }
 
 .button {
-  font-family: "Montserrat", sans-serif;
+  font-family: $Montserrat;
 }

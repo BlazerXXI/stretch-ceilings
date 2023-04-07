@@ -4,6 +4,13 @@
   &__logo-block {
   }
 
+  // .header__right-menu
+  &__right-menu {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+  }
+
   // .header__nav
 
   &__nav {
@@ -13,13 +20,23 @@
 
   &__contact-block {
   }
-}
-.container {
+  // .container
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header-nav {
   // .header-nav__list
 
   &__list {
+    display: flex;
+    align-items: center;
+		flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
   }
 }
 .nav-list {

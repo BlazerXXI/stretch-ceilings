@@ -22,7 +22,8 @@ const Header = () => {
             <img width={100} src={logo} alt={logoAlt} />
           </Link>
         </div>
-        <nav className="header__nav">
+        <div className="header__right-menu">
+				<nav className="header__nav">
           <ul className="header-nav__list nav-list ">
             {listArr.map((element) => (
               <li className="nav-list__item">
@@ -36,6 +37,7 @@ const Header = () => {
             +38 095 416 99 26
           </Link>
         </div>
+				</div>
       </div>
     </header>
   );

@@ -6,6 +6,13 @@
   letter-spacing: 0em;
 }
 
+@mixin font-400-14 {
+  font-family: $Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
 @mixin flex-center {
   display: flex;
   align-items: center;

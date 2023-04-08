@@ -1,4 +1,14 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/variables";
+
 .header {
+  z-index: 1000;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: $white;
   // .header__logo-block
 
   &__logo-block {
@@ -49,5 +59,6 @@
   // .contact-block__item
 
   &__item {
+    @include font-tel;
   }
 }

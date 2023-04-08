@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="hero-title__button hero__button">
             <button className="hero-button__btn">
               Консультація менеджера
-              <img src={buttonBackground} width={buttonWidth} alt={alt}></img>
+              {/* <img src={buttonBackground} width={buttonWidth} alt={alt}></img> */}
             </button>
           </div>
         </div>

@@ -1,12 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Gilroy|Montserrat&display=swap");
 @import url("./zeroing.scss");
 @import url("../components/Header/header.scss");
 @import url("../components/Hero/hero.scss");
 @import "./variables";
 @import "./mixins";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Regular.woff2") format(woff2);
+  src: url("../assets/fonts/Gilroy-Medium.woff2") format(woff2);
+  src: url("../assets/fonts/Gilroy-Light.woff2") format(woff2);
+  src: url("../assets/fonts/Gilroy-Bold.woff2") format(woff2);
+}
+
+$bg-color: #040404;
 
 body {
   @include font;
+  background-color: $bg-color;
 }
 
 .container {
@@ -19,6 +30,42 @@ body {
   }
 }
 
-.button {
+button {
   font-family: $Montserrat;
+}
+
+[class*="__btn"] {
+  min-height: 60px;
+  // transform: skew(-40deg);
+  border-radius: 9px;
+  background: rgb(255, 138, 30);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 138, 30, 1) 30%,
+    rgba(255, 249, 216, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 138, 30, 1) 30%,
+    rgba(255, 249, 216, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 138, 30, 1) 30%,
+    rgba(255, 249, 216, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8a1e",endColorstr="#fff9d8",GradientType=1);
+  @include active-scale;
+  &:hover,
+  &:target {
+    background: #ff8a1e;
+  }
+}
+
+a {
+  @include active-scale;
+  &:hover,
+  &:target {
+    @include link-active;
+  }
 }

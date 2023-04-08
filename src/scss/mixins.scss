@@ -1,9 +1,18 @@
 @mixin font {
   font-family: $Gilroy;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.14;
-  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+// tel num or
+@mixin font-tel {
+  font-family: $Gilroy;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
 }
 
 @mixin font-400-14 {
@@ -18,4 +27,22 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@mixin link-active {
+  background: -webkit-linear-gradient(#ff8a1e, #fff9d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin active-scale {
+  transition: all 0.3s ease 0s;
+  &:hover,
+  &:target {
+    opacity: 0.9;
+  }
+  &:active {
+    scale: 0.9;
+    opacity: 0.6;
+  }
 }

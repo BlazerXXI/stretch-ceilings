@@ -13,12 +13,32 @@
 
   &__logo-block {
   }
+  /* -----------OVERLAY------------- */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+  }
 
+  .overlay.visible {
+    display: block;
+  }
+  /* ------------------------ */
   // .header__right-menu
   &__right-menu {
     gap: 50px;
     display: flex;
     align-items: center;
+    @media (max-width: 767px) {
+      .menu-toggle__open + & {
+        background-color: #040404d9;
+      }
+    }
   }
 
   // .header__nav
@@ -47,12 +67,48 @@
     justify-content: center;
     text-align: center;
     gap: 50px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 275px;
+      width: 214px;
+      border-radius: 0px;
+      background-color: #fff;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-1000%);
+      z-index: 1;
+    }
   }
 }
 .nav-list {
   // .nav-list__item
 
   &__item {
+    margin: 0px 0px 0px 20px;
+    @media (max-width: 767px) {
+      margin: 10px 0;
+    }
+  }
+}
+.menu-toggle__open span:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+.menu-toggle__open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle__open span:last-child {
+  transform: translateY(-10px) rotate(-45deg);
+}
+@media (max-width: 767px) {
+  .header__right-menu {
+    z-index: 1111;
+  }
+  .menu-toggle {
+    display: block;
+    z-index: 11111;
   }
 }
 .contact-block {
@@ -60,5 +116,52 @@
 
   &__item {
     @include font-tel;
+  }
+}
+
+// burger menu
+@media (max-width: 767px) {
+  .nav-list__open {
+    transform: translateY(0%);
+  }
+  .header-nav__list {
+    overflow: hidden;
+    gap: 0;
+    color: #040404;
+    align-items: start;
+    gap: 5px;
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../images/header/vector-sots.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      right: -130px;
+    }
+  }
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background-color: $white;
+  margin: 6px 0;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+.menu-toggle__open {
+  span {
+    background-color: $black;
   }
 }

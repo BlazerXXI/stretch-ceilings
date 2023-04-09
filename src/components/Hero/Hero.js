@@ -22,6 +22,7 @@ const listArr = [
 const Hero = () => {
   return (
     <section className="hero">
+      <i className="hero__bg" />
       <div className="container">
         <div className="hero__title-block">
           <div className="hero-title-block__title">

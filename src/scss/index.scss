@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gil";
   src: url("../assets/fonts/Gilroy-Regular.woff2") format(woff2);
   src: url("../assets/fonts/Gilroy-Medium.woff2") format(woff2);
   src: url("../assets/fonts/Gilroy-Light.woff2") format(woff2);
@@ -35,22 +35,47 @@ button {
 }
 
 [class*="__btn"] {
-  transition: all 0.3s;
-  background: linear-gradient(90deg, #ff8a1e 31.63%, #fff9d8 111.7%);
-  min-height: 60px;
-  transform: skew(-40deg);
-  border-radius: 9px;
-  &:hover,
-  &:target {
-    background-color: #ff8a1e;
+  & {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: $black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    min-width: 400px;
+    min-height: 60px;
+    font-size: 18px;
+    line-height: 1.3;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: $primary-color;
+    transition: all 0.3s ease 0s;
+    transform: skew(-40deg);
+    opacity: 1;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    @include hover-link;
+  }
+  @include active-scale;
 }
 
 a {
   transition: all 0.3s ease 0s;
   @include active-scale;
   &:hover,
-  &:target {
+  &:focus {
     @include link-active;
   }
 }

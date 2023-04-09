@@ -36,7 +36,6 @@
 }
 
 @mixin active-scale {
-  transition: all 0.3s ease 0s;
   &:hover,
   &:target {
     opacity: 0.9;

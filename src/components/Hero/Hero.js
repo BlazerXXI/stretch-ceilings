@@ -7,9 +7,6 @@ import Phone from "../../images/hero/Phone.svg";
 import Facebook from "../../images/hero/Facebook.svg";
 
 // button Hero page
-import buttonBackground from "../../images/button/button.svg";
-const buttonWidth = 400;
-const alt = "Button";
 
 // social icons array
 const listArr = [
@@ -33,10 +30,7 @@ const Hero = () => {
             <h3 className="hero__title-item">Мережа салонів</h3>
           </div>
           <div className="hero-title__button hero__button">
-            <button className="hero-button__btn">
-              Консультація менеджера
-              {/* <img src={buttonBackground} width={buttonWidth} alt={alt}></img> */}
-            </button>
+            <button className="hero-button__btn">Консультація менеджера</button>
           </div>
         </div>
         <div className="hero__social-block">

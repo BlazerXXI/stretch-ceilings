@@ -4,7 +4,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.15;
-  text-transform: uppercase;
 }
 
 // tel num or
@@ -40,8 +39,6 @@
   opacity: 0.8;
 }
 @mixin active-scale {
-  &:active {
     scale: 0.9;
     opacity: 0.6;
-  }
 }

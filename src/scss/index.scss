@@ -38,9 +38,7 @@ button {
   & {
     position: relative;
     background-color: transparent;
-    border: none;
     color: $black;
-    padding: 10px 20px;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -48,6 +46,12 @@ button {
     min-height: 60px;
     font-size: 18px;
     line-height: 1.3;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 1.25;
+      min-width: 295px;
+    }
   }
 
   &::before {
@@ -68,14 +72,18 @@ button {
   &:focus::before {
     @include hover-link;
   }
-  @include active-scale;
+  &:active {
+    @include active-scale;
+  }
 }
 
 a {
   transition: all 0.3s ease 0s;
-  @include active-scale;
   &:hover,
   &:focus {
     @include link-active;
+  }
+  &:active {
+    @include active-scale;
   }
 }

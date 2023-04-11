@@ -38,7 +38,7 @@ const Header = () => {
     <header className="header" ref={headerRef}>
       <div className="container">
         <div className="header__logo-block">
-          <Link exact to="/">
+          <Link to="./">
             <img width={100} src={logo} alt={logoAlt} />
           </Link>
         </div>

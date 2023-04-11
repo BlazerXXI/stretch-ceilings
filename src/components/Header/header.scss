@@ -12,6 +12,11 @@
   // .header__logo-block
 
   &__logo-block {
+    @media (max-width: 767px) {
+      img {
+        width: 60px;
+      }
+    }
   }
   /* -----------OVERLAY------------- */
   .overlay {

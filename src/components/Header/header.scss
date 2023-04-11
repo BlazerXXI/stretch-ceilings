@@ -125,11 +125,10 @@
     transform: translateY(0%);
   }
   .header-nav__list {
-    overflow: hidden;
-    gap: 0;
     color: #040404;
     align-items: start;
     gap: 5px;
+    overflow: hidden;
     &::before {
       content: "";
       display: block;
@@ -139,7 +138,8 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 0;
-      right: -130px;
+      left: 0;
+      margin-left: 130px;
     }
   }
 }

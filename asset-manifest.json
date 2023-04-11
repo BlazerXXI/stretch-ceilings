@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.ce5adc54.css",
+    "main.css": "/stretch-ceilings/static/css/main.e9ebf5ff.css",
     "main.js": "/stretch-ceilings/static/js/main.827743a4.js",
     "static/media/hero-background-image-logo.png": "/stretch-ceilings/static/media/hero-background-image-logo.cf4958f6a5bec487963f.png",
     "static/media/Gilroy-Medium.woff2": "/stretch-ceilings/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
@@ -12,11 +12,11 @@
     "index.html": "/stretch-ceilings/index.html",
     "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.1e7b6799748f18def1432ce9570a74dd.svg",
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.fa9fe237988228455a63866bfd507cba.svg",
-    "main.ce5adc54.css.map": "/stretch-ceilings/static/css/main.ce5adc54.css.map",
+    "main.e9ebf5ff.css.map": "/stretch-ceilings/static/css/main.e9ebf5ff.css.map",
     "main.827743a4.js.map": "/stretch-ceilings/static/js/main.827743a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce5adc54.css",
+    "static/css/main.e9ebf5ff.css",
     "static/js/main.827743a4.js"
   ]
 }

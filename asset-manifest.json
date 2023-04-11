@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.7ecc14f3.css",
-    "main.js": "/stretch-ceilings/static/js/main.e42b704e.js",
+    "main.css": "/stretch-ceilings/static/css/main.a19de018.css",
+    "main.js": "/stretch-ceilings/static/js/main.4f352cc0.js",
     "static/media/hero-background-image-logo.png": "/stretch-ceilings/static/media/hero-background-image-logo.cf4958f6a5bec487963f.png",
     "static/media/Gilroy-Medium.woff2": "/stretch-ceilings/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
     "static/media/Gilroy-Bold.woff2": "/stretch-ceilings/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
@@ -12,11 +12,11 @@
     "index.html": "/stretch-ceilings/index.html",
     "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.747bed2628b6b3374ea250de272d8276.svg",
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
-    "main.7ecc14f3.css.map": "/stretch-ceilings/static/css/main.7ecc14f3.css.map",
-    "main.e42b704e.js.map": "/stretch-ceilings/static/js/main.e42b704e.js.map"
+    "main.a19de018.css.map": "/stretch-ceilings/static/css/main.a19de018.css.map",
+    "main.4f352cc0.js.map": "/stretch-ceilings/static/js/main.4f352cc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ecc14f3.css",
-    "static/js/main.e42b704e.js"
+    "static/css/main.a19de018.css",
+    "static/js/main.4f352cc0.js"
   ]
 }

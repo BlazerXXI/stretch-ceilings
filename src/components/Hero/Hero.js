@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Instagram from "../../images/hero/Inst.svg";
 import Phone from "../../images/hero/Phone.svg";
 import Facebook from "../../images/hero/Facebook.svg";
+import Popup from "reactjs-popup";
 
 // button Hero page
 
@@ -19,6 +20,11 @@ const listArr = [
   { img: Phone, link: "/phone", alt: "Phone", size: 35 },
   { img: Facebook, link: "/facebook", alt: "Facebook", size: 35 },
 ];
+
+const closePopup = (event) => {
+  event.preventDefault();
+  closePopup();
+};
 const Hero = () => {
   return (
     <section className="hero">
@@ -31,7 +37,33 @@ const Hero = () => {
             <h3 className="hero__title-item">Мережа салонів</h3>
           </div>
           <div className="hero-title__button hero__button">
-            <button className="hero-button__btn">Консультація менеджера</button>
+            <Popup
+              trigger={
+                <button className="hero-button__btn">
+                  Консультація менеджера
+                </button>
+              }
+              className="hero-title__popup hero-popup"
+              closeOnDocumentClick={false}
+              closeOnEscape={true}
+              modal={true}
+              lockScroll={true}
+              onClose={closePopup}
+            >
+              <span className="close" onClick={closePopup}>
+                &times;
+              </span>
+              <div className="popup-content">
+                <div className="hero-title__popup-content-item">
+                  <Link
+                    to="tel:0954169926"
+                    className="hero-title__popup-content-item__link hero-title__popup-content-item__link--tel"
+                  >
+                    +38 095 416 99 26
+                  </Link>
+                </div>
+              </div>
+            </Popup>
           </div>
         </div>
         <div className="hero__social-block">

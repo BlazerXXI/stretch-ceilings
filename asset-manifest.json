@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.9a499ea7.css",
+    "main.css": "/stretch-ceilings/static/css/main.b96e52b9.css",
     "main.js": "/stretch-ceilings/static/js/main.40007e55.js",
     "static/media/background-hero-section.png": "/stretch-ceilings/static/media/background-hero-section.c219be680cfb2540c35e.png",
     "static/media/logo-transparent.png": "/stretch-ceilings/static/media/logo-transparent.bce31cf98acc36ebe8ff.png",
@@ -15,11 +15,11 @@
     "index.html": "/stretch-ceilings/index.html",
     "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.747bed2628b6b3374ea250de272d8276.svg",
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
-    "main.9a499ea7.css.map": "/stretch-ceilings/static/css/main.9a499ea7.css.map",
+    "main.b96e52b9.css.map": "/stretch-ceilings/static/css/main.b96e52b9.css.map",
     "main.40007e55.js.map": "/stretch-ceilings/static/js/main.40007e55.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a499ea7.css",
+    "static/css/main.b96e52b9.css",
     "static/js/main.40007e55.js"
   ]
 }

@@ -93,16 +93,13 @@
 /* Стилі для попапу */
 .close {
   color: $white;
-  font-size: 30px;
+  font-size: 39px;
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 32px 21px;
-  max-height: 17px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 1.8rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  right: 0px;
+  top: 0px;
 
   z-index: inherit;
 }

@@ -74,8 +74,8 @@
     gap: 50px;
     height: auto;
     overflow: auto;
-    color: #040404;
     @media (max-width: 767px) {
+      color: #040404;
       flex-direction: column;
       position: absolute;
       top: 0;
@@ -94,17 +94,19 @@
     }
 
     &::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-image: url("../../images/header/vector-sots.svg");
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-left: 117px;
-      z-index: -11;
+      @media (max-width: 767px) {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../images/header/vector-sots.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 117px;
+        z-index: -11;
+      }
     }
   }
 }

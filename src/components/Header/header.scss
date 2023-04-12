@@ -70,20 +70,19 @@
   &__list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     gap: 50px;
-    height: auto;
     overflow: hidden;
     @media (max-width: 767px) {
       color: #040404;
+      overflow-x: hidden;
       flex-direction: column;
       position: absolute;
       top: 0;
       right: 0;
-      height: 275px;
-      width: 214px;
+      min-height: 275px;
+      min-width: 214px;
       border-radius: 5px;
       background-color: #fff;
       padding: 20px;

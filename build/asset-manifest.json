@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/stretch-ceilings/static/css/main.33140019.css",
+    "main.js": "/stretch-ceilings/static/js/main.81e0995a.js",
+    "static/media/background-hero-section.png": "/stretch-ceilings/static/media/background-hero-section.c219be680cfb2540c35e.png",
+    "static/media/logo-transparent.png": "/stretch-ceilings/static/media/logo-transparent.bce31cf98acc36ebe8ff.png",
+    "static/media/Gilroy-Medium.woff2": "/stretch-ceilings/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
+    "static/media/Gilroy-Bold.woff2": "/stretch-ceilings/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
+    "static/media/Gilroy-Light.woff2": "/stretch-ceilings/static/media/Gilroy-Light.c2e7a6dc47e5b9a89a37.woff2",
+    "static/media/Gilroy-Regular.woff2": "/stretch-ceilings/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
+    "static/media/vector-sots.svg": "/stretch-ceilings/static/media/vector-sots.e8c86890e0cdb001c38e.svg",
+    "static/media/Inst.svg": "/stretch-ceilings/static/media/Inst.ee7ef7c2cca7791271c2d3eb962aca16.svg",
+    "index.html": "/stretch-ceilings/index.html",
+    "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.747bed2628b6b3374ea250de272d8276.svg",
+    "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
+    "main.33140019.css.map": "/stretch-ceilings/static/css/main.33140019.css.map",
+    "main.81e0995a.js.map": "/stretch-ceilings/static/js/main.81e0995a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33140019.css",
+    "static/js/main.81e0995a.js"
+  ]
+}

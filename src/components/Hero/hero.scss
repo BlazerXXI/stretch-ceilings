@@ -92,9 +92,17 @@
 /* ------------------------ */
 /* Стилі для попапу */
 .close {
+  color: $white;
+  font-size: 30px;
   position: absolute;
   top: 0;
   right: 0;
+  padding: 32px 21px;
+  max-height: 17px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   z-index: inherit;
 }
@@ -105,8 +113,12 @@
 .popup-content {
   z-index: 99991 !important;
 }
+.hero-title__popup-content {
+  width: 100%;
+  height: 100%;
+}
 .hero-title__popup-content .popup-content {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -170,9 +182,8 @@
     font-weight: 500;
     line-height: 1.1;
     text-transform: uppercase;
-
-    display: flex;
     flex-direction: column;
+    display: flex;
     gap: 20px;
   }
 }

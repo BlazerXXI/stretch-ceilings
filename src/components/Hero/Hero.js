@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { Link } from "react-router-dom";
 
 // import social icons
@@ -22,9 +22,26 @@ const listArr = [
 ];
 
 const Hero = () => {
-	const closePopup = () => {
+  const popup = React.useRef(null);
+  const closePopup = () => {
+    popup.current.close();
+    popup.current.setState({ isOpen: false });
   };
 
+  // const popupContent = React.useRef(null);
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popup.current && !popup.current.contains(event.target)) {
+        popup.current.setState({ isOpen: false });
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   return (
     <section className="hero">
       <i className="hero__bg" />
@@ -48,6 +65,7 @@ const Hero = () => {
               modal={true}
               lockScroll={true}
               onClose={closePopup}
+              ref={popup}
             >
               <span className="close" onClick={closePopup}>
                 &times;

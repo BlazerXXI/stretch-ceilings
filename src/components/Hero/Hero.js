@@ -21,11 +21,10 @@ const listArr = [
   { img: Facebook, link: "/facebook", alt: "Facebook", size: 35 },
 ];
 
-const closePopup = (event) => {
-  event.preventDefault();
-  closePopup();
-};
 const Hero = () => {
+	const closePopup = () => {
+  };
+
   return (
     <section className="hero">
       <i className="hero__bg" />

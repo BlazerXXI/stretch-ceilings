@@ -25,23 +25,21 @@ const Hero = () => {
   const popup = React.useRef(null);
   const closePopup = () => {
     popup.current.close();
-    popup.current.setState({ isOpen: false });
   };
+  // console.log(popup.current);
+  // React.useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (popup.current && !popup.current(event.target)) {
+  //       popup.current.setState({ isOpen: false });
+  //     }
+  //   };
 
-  // const popupContent = React.useRef(null);
-  React.useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (popup.current && !popup.current.contains(event.target)) {
-        popup.current.setState({ isOpen: false });
-      }
-    };
+  //   document.addEventListener("click", handleClickOutside);
 
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, []);
   return (
     <section className="hero">
       <i className="hero__bg" />

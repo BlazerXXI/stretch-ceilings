@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.0739b2b3.css",
-    "main.js": "/stretch-ceilings/static/js/main.a2e81b2f.js",
+    "main.css": "/stretch-ceilings/static/css/main.2644a029.css",
+    "main.js": "/stretch-ceilings/static/js/main.c5e73e6d.js",
     "static/media/background-hero-section.png": "/stretch-ceilings/static/media/background-hero-section.c219be680cfb2540c35e.png",
     "static/media/logo-transparent.png": "/stretch-ceilings/static/media/logo-transparent.bce31cf98acc36ebe8ff.png",
     "static/media/Gilroy-Medium.woff2": "/stretch-ceilings/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
@@ -15,11 +15,12 @@
     "index.html": "/stretch-ceilings/index.html",
     "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.747bed2628b6b3374ea250de272d8276.svg",
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
-    "main.0739b2b3.css.map": "/stretch-ceilings/static/css/main.0739b2b3.css.map",
-    "main.a2e81b2f.js.map": "/stretch-ceilings/static/js/main.a2e81b2f.js.map"
+    "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
+    "main.2644a029.css.map": "/stretch-ceilings/static/css/main.2644a029.css.map",
+    "main.c5e73e6d.js.map": "/stretch-ceilings/static/js/main.c5e73e6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0739b2b3.css",
-    "static/js/main.a2e81b2f.js"
+    "static/css/main.2644a029.css",
+    "static/js/main.c5e73e6d.js"
   ]
 }

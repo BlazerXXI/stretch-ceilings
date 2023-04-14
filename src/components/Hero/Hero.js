@@ -1,11 +1,11 @@
-import React, { Children } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // import social icons
 import Instagram from "../../images/hero/Inst.svg";
 import Phone from "../../images/hero/Phone.svg";
 import Facebook from "../../images/hero/Facebook.svg";
-import Popup from "reactjs-popup";
+import Modal from "../Modals/Modal";
 
 // button Hero page
 
@@ -22,24 +22,6 @@ const listArr = [
 ];
 
 const Hero = () => {
-  const popup = React.useRef(null);
-  const closePopup = () => {
-    popup.current.close();
-  };
-  // console.log(popup.current);
-  // React.useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (popup.current && !popup.current(event.target)) {
-  //       popup.current.setState({ isOpen: false });
-  //     }
-  //   };
-
-  //   document.addEventListener("click", handleClickOutside);
-
-  //   return () => {
-  //     document.removeEventListener("click", handleClickOutside);
-  //   };
-  // }, []);
   return (
     <section className="hero">
       <i className="hero__bg" />
@@ -51,34 +33,7 @@ const Hero = () => {
             <h3 className="hero__title-item">Мережа салонів</h3>
           </div>
           <div className="hero-title__button hero__button">
-            <Popup
-              trigger={
-                <button className="hero-button__btn">
-                  Консультація менеджера
-                </button>
-              }
-              className="hero-title__popup hero-popup"
-              closeOnDocumentClick={false}
-              closeOnEscape={true}
-              modal={true}
-              lockScroll={true}
-              onClose={closePopup}
-              ref={popup}
-            >
-              <span className="close" onClick={closePopup}>
-                &times;
-              </span>
-              <div className="popup-content">
-                <div className="hero-title__popup-content-item">
-                  <Link
-                    to="tel:0954169926"
-                    className="hero-title__popup-content-item__link hero-title__popup-content-item__link--tel"
-                  >
-                    +38 095 416 99 26
-                  </Link>
-                </div>
-              </div>
-            </Popup>
+            <Modal />
           </div>
         </div>
         <div className="hero__social-block">

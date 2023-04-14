@@ -38,7 +38,7 @@ const Header = () => {
     <header className="header" ref={headerRef}>
       <div className="container">
         <div className="header__logo-block">
-          <Link to="./">
+          <Link to="./stretch-ceilings/">
             <img width={100} src={logo} alt={logoAlt} />
           </Link>
         </div>

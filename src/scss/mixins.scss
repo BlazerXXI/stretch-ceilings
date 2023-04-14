@@ -29,10 +29,11 @@
 }
 
 @mixin link-active {
-  background: $active-color;
-  background: -webkit-linear-gradient(#ff8a1e, #fff9d8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	transition: all 0.3s ease 0s;
+  color: $active-color !important;
+  // background: -webkit-linear-gradient(#ff8a1e, #fff9d8);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
 }
 @mixin hover-link {
   opacity: 0.8;

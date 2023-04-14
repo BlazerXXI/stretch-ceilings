@@ -2,13 +2,13 @@
 @import "../../scss/variables";
 
 .header {
-  z-index: 30;
   background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   color: $white;
+  overflow-x: visible;
   // .header__logo-block
 
   &__logo-block {
@@ -60,6 +60,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    overflow: visible;
   }
 }
 .header-nav {
@@ -130,7 +132,6 @@
 }
 @media (max-width: 767px) {
   .header__right-menu {
-    z-index: 1111;
   }
   .menu-toggle {
     display: block;

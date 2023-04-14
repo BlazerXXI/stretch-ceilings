@@ -48,6 +48,9 @@
   a {
     @include font-tel;
     font-size: 30px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
   }
   &::before {
     position: absolute;
@@ -55,6 +58,7 @@
     left: 0;
     content: "";
     background: url("../../images/hero/vector-sots-top.svg") 0 0 no-repeat;
+    z-index: -2;
     @media (min-width: 767px) {
       scale: 2.3;
       margin: 50px 0px 0px 90px;
@@ -71,6 +75,7 @@
     content: "";
 
     background: url("../../images/hero/vector-sots-bottom.svg") 0 0 no-repeat;
+    z-index: -2;
     @media (min-width: 767px) {
       scale: 2.3;
       margin: 0 50px 60px 0;

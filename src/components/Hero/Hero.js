@@ -7,7 +7,6 @@ import Phone from "../../images/hero/Phone.svg";
 import Facebook from "../../images/hero/Facebook.svg";
 import Modal from "../Modals/Modal";
 
-// button Hero page
 
 // social icons array
 const listArr = [
@@ -26,6 +25,7 @@ const Hero = () => {
     <section className="hero">
       <i className="hero__bg" />
       <div className="container">
+      
         <div className="hero__title-block">
           <div className="hero-title-block__title">
             <h3 className="hero__title-item">Трендові</h3>

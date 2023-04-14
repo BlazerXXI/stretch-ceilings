@@ -21,10 +21,7 @@ const Modal = () => {
   }
 
   return (
-    <div>
-      <span className="close" onClick={closePopup}>
-        &times;
-      </span>
+    <>
       <Popup
         trigger={
           <button className="hero-button__btn">Консультація менеджера</button>
@@ -37,6 +34,9 @@ const Modal = () => {
         onClose={closePopup}
         ref={popup}
       >
+        <span className="close" onClick={closePopup}>
+          &times;
+        </span>
         <div className="popup-content">
           <div className="hero-title__popup-content-item">
             <Link
@@ -48,7 +48,7 @@ const Modal = () => {
           </div>
         </div>
       </Popup>
-    </div>
+    </>
   );
 };
 

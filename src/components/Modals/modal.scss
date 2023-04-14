@@ -12,7 +12,6 @@
   cursor: pointer;
   right: 0;
   top: 0;
-  display: none;
 }
 
 .popup-arrow {
@@ -21,6 +20,7 @@
 .popup-content {
 }
 .hero-title__popup-content {
+  position: unset !important;
   height: 200px;
   width: 345px;
 }
@@ -57,6 +57,18 @@
     height: 100px;
   }
   .hero-title__popup-content-item__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    &::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-image: url("../../images/modal/modal-telephone.svg");
+    }
     &:active {
       @include link-active;
     }

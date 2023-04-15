@@ -13,8 +13,13 @@
   right: 0;
   top: 0;
   z-index: 2;
+  transition: all 0.3s ease 0s;
   @media (max-width: 767px) {
     color: $white;
+  }
+  &:hover,
+  &:focus {
+    @include active-scale;
   }
 }
 
@@ -96,6 +101,7 @@
     text-align: center;
     flex-wrap: wrap;
     gap: 15px;
+    transition: all 0.3s ease 0s;
     &::before {
       content: "";
       width: 30px;

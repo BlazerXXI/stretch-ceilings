@@ -79,11 +79,9 @@ button {
 }
 
 a {
-  transition: all 0.3s ease 0s;
   &:hover,
   &:focus {
-    transition: all 0.3s ease 0s;
-    // @include link-active;
+    @include link-active;
   }
   &:active {
     @include active-scale;

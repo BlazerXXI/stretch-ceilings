@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.f15737b0.css",
+    "main.css": "/stretch-ceilings/static/css/main.88e74cc8.css",
     "main.js": "/stretch-ceilings/static/js/main.c5e73e6d.js",
     "static/media/background-hero-section.png": "/stretch-ceilings/static/media/background-hero-section.c219be680cfb2540c35e.png",
     "static/media/logo-transparent.png": "/stretch-ceilings/static/media/logo-transparent.bce31cf98acc36ebe8ff.png",
@@ -16,11 +16,11 @@
     "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.747bed2628b6b3374ea250de272d8276.svg",
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
     "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
-    "main.f15737b0.css.map": "/stretch-ceilings/static/css/main.f15737b0.css.map",
+    "main.88e74cc8.css.map": "/stretch-ceilings/static/css/main.88e74cc8.css.map",
     "main.c5e73e6d.js.map": "/stretch-ceilings/static/js/main.c5e73e6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f15737b0.css",
+    "static/css/main.88e74cc8.css",
     "static/js/main.c5e73e6d.js"
   ]
 }

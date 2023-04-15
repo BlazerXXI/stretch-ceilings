@@ -4,7 +4,7 @@
 // Стилі для попапу */
 
 .close {
-  color: $white;
+  color: $black;
   font-size: 39px;
   position: absolute;
   line-height: 1.8rem;
@@ -12,6 +12,10 @@
   cursor: pointer;
   right: 0;
   top: 0;
+  z-index: 2;
+  @media (max-width: 767px) {
+    color: $white;
+  }
 }
 
 .popup-arrow {
@@ -116,4 +120,5 @@
   justify-content: center;
   align-items: center;
   padding: 0 15px;
+  z-index: 50;
 }

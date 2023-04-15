@@ -9,6 +9,7 @@
   width: 100%;
   color: $white;
   overflow-x: visible;
+  z-index: 5;
   // .header__logo-block
 
   &__logo-block {
@@ -88,7 +89,7 @@
       padding: 20px;
       transition: all 0.3s ease-in-out;
       transform: translateY(-1000%);
-      z-index: 111111111;
+      z-index: 5;
       gap: 14px;
       align-items: start;
       text-transform: uppercase;
@@ -135,7 +136,6 @@
   }
   .menu-toggle {
     display: block;
-    z-index: 9999999999999;
   }
 }
 .contact-block {
@@ -166,6 +166,8 @@
   display: none;
   cursor: pointer;
   @media (max-width: 767px) {
+    z-index: 10;
+
     display: block;
   }
 }

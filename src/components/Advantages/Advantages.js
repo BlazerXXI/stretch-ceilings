@@ -1,19 +1,18 @@
 import React from "react";
+import AdvantagesCards from "../AdvantagesCards/AdvantagesCards";
 
 const Advantages = () => {
   return (
     <section className="advantages">
       <div className="container">
-        <div>
+        <div className="advantages__polygon">
           <i />
         </div>
-        <div>
+        <div className="advantages__title">
           <h2>Переваги компанії</h2>
         </div>
-        <div>
-          <ul>
-            <li></li>
-          </ul>
+        <div className="advantages__cards">
+          <AdvantagesCards />
         </div>
       </div>
     </section>

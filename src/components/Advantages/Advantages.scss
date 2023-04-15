@@ -2,5 +2,52 @@
 @import "../../scss/mixins.scss";
 
 .advantages {
+  position: relative;
+  margin: 100px 0px 0px 0px;
   color: $white;
+
+  // .advantages__polygon
+
+  &__polygon {
+		z-index: -2;
+    background-image: url("../../images/advantages/Polygon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  // .advantages__title
+
+  &__title {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+
+    // font
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    /* gradient */
+
+    background: linear-gradient(90deg, #ff8a1e 31.63%, #fff9d8 111.7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  // .advantages__cards
+
+  &__cards {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+.container {
 }

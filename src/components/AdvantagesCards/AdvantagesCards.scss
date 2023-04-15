@@ -1,0 +1,44 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/mixins.scss";
+
+.advantages-cards {
+  // .advantages-cards__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+   
+
+    .advantages-cards-item__img-block {
+    }
+    .advantages-cards-item__text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+.advantages-cards-item {
+  // .advantages-cards-item__img
+
+  &-block__img {
+  }
+
+  // .advantages-cards-item__title
+
+  &-block__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-transform: uppercase;
+  }
+
+  // .advantages-cards-item__text
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.21;
+  }
+}

@@ -47,13 +47,13 @@ const AdvantagesCards = () => {
   ];
 
   const [ref, InView] = useInView({
-    threshold: 0,
+    threshold: 0.5,
   });
 
   const advantageItems = advantageCards.map((advantage, index) => (
     <li
       className={`advantages-cards__item item-${index} ${
-        InView ? "isVisible-true" : ""
+        InView ? "isVisible" : ""
       }`}
       key={index}
       ref={ref}

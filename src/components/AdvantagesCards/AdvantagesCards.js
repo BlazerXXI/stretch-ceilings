@@ -51,29 +51,28 @@ const AdvantagesCards = () => {
   });
 
   const advantageItems = advantageCards.map((advantage, index) => (
-
-        <li
-          className={`advantages-cards__item item-${index} isVisible${InView}`}
-          key={index}
-          ref={ref}
-        >
-          <div className="advantages-cards-item__img-block">
-            <img
-              className="advantages-cards-item-block__img"
-              src={advantage.src}
-              alt={advantage.title}
-              width={60}
-              height={60}
-              loading="lazy"
-            />
-          </div>
-          <div className="advantages-cards-item__text-block">
-            <h3 className="advantages-cards-item-block__title">
-              {advantage.title}
-            </h3>
-            <p className="advantages-cards-item__text">{advantage.text}</p>
-          </div>
-        </li>
+    <li
+      className={`advantages-cards__item item-${index} isVisible${InView}`}
+      key={index}
+      ref={ref}
+    >
+      <div className="advantages-cards-item__img-block">
+        <img
+          className="advantages-cards-item-block__img"
+          src={advantage.src}
+          alt={advantage.title}
+          width={60}
+          height={60}
+          loading="lazy"
+        />
+      </div>
+      <div className="advantages-cards-item__text-block">
+        <h3 className="advantages-cards-item-block__title">
+          {advantage.title}
+        </h3>
+        <p className="advantages-cards-item__text">{advantage.text}</p>
+      </div>
+    </li>
   ));
 
   return <ul>{advantageItems}</ul>;

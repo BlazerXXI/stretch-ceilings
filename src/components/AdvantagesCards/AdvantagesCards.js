@@ -1,4 +1,3 @@
-import React from "react";
 import icon from "../../images/advantages/advIcon.svg";
 import icon1 from "../../images/advantages/advIcon-1.svg";
 import icon2 from "../../images/advantages/advIcon-2.svg";
@@ -6,6 +5,7 @@ import icon3 from "../../images/advantages/advIcon-3.svg";
 import icon4 from "../../images/advantages/advIcon-4.svg";
 import icon5 from "../../images/advantages/advIcon-5.svg";
 import icon6 from "../../images/advantages/advIcon-6.svg";
+import { useInView } from "react-intersection-observer";
 
 const AdvantagesCards = () => {
   const advantageCards = [
@@ -46,25 +46,34 @@ const AdvantagesCards = () => {
     },
   ];
 
+  const [ref, InView, entry] = useInView({
+    threshold: 0,
+  });
+
   const advantageItems = advantageCards.map((advantage, index) => (
-    <li className="advantages-cards__item" key={index}>
-      <div className="advantages-cards-item__img-block">
-        <img
-          className="advantages-cards-item-block__img"
-          src={advantage.src}
-          alt={advantage.title}
-          width={60}
-          height={60}
-          loading="lazy"
-        />
-      </div>
-      <div className="advantages-cards-item__text-block">
-        <h3 className="advantages-cards-item-block__title">
-          {advantage.title}
-        </h3>
-        <p className="advantages-cards-item__text">{advantage.text}</p>
-      </div>
-    </li>
+
+        <li
+          className={`advantages-cards__item item-${index} isVisible${InView}`}
+          key={index}
+          ref={ref}
+        >
+          <div className="advantages-cards-item__img-block">
+            <img
+              className="advantages-cards-item-block__img"
+              src={advantage.src}
+              alt={advantage.title}
+              width={60}
+              height={60}
+              loading="lazy"
+            />
+          </div>
+          <div className="advantages-cards-item__text-block">
+            <h3 className="advantages-cards-item-block__title">
+              {advantage.title}
+            </h3>
+            <p className="advantages-cards-item__text">{advantage.text}</p>
+          </div>
+        </li>
   ));
 
   return <ul>{advantageItems}</ul>;

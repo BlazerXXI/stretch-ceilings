@@ -52,7 +52,9 @@ const AdvantagesCards = () => {
 
   const advantageItems = advantageCards.map((advantage, index) => (
     <li
-      className={`advantages-cards__item item-${index} isVisible-${InView}`}
+      className={`advantages-cards__item item-${index} ${
+        InView ? "isVisible-true" : ""
+      }`}
       key={index}
       ref={ref}
     >

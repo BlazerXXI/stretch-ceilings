@@ -44,6 +44,7 @@ const Hero = () => {
                     src={element.img}
                     alt={element.alt}
                     width={element.size}
+                    height={element.size}
                   />
                 </Link>
               </li>

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.25091f93.css",
-    "main.js": "/stretch-ceilings/static/js/main.63b6fc76.js",
-    "static/media/background-hero-section.png": "/stretch-ceilings/static/media/background-hero-section.c219be680cfb2540c35e.png",
+    "main.css": "/stretch-ceilings/static/css/main.48af88b0.css",
+    "main.js": "/stretch-ceilings/static/js/main.4a7a26a6.js",
+    "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
     "static/media/logo-transparent.png": "/stretch-ceilings/static/media/logo-transparent.bce31cf98acc36ebe8ff.png",
     "static/media/Gilroy-Medium.woff2": "/stretch-ceilings/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
     "static/media/Gilroy-Bold.woff2": "/stretch-ceilings/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
@@ -24,11 +24,11 @@
     "static/media/Facebook.svg": "/stretch-ceilings/static/media/Facebook.747bed2628b6b3374ea250de272d8276.svg",
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
     "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
-    "main.25091f93.css.map": "/stretch-ceilings/static/css/main.25091f93.css.map",
-    "main.63b6fc76.js.map": "/stretch-ceilings/static/js/main.63b6fc76.js.map"
+    "main.48af88b0.css.map": "/stretch-ceilings/static/css/main.48af88b0.css.map",
+    "main.4a7a26a6.js.map": "/stretch-ceilings/static/js/main.4a7a26a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.25091f93.css",
-    "static/js/main.63b6fc76.js"
+    "static/css/main.48af88b0.css",
+    "static/js/main.4a7a26a6.js"
   ]
 }

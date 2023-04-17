@@ -5,7 +5,6 @@ import icon3 from "../../images/advantages/advIcon-3.svg";
 import icon4 from "../../images/advantages/advIcon-4.svg";
 import icon5 from "../../images/advantages/advIcon-5.svg";
 import icon6 from "../../images/advantages/advIcon-6.svg";
-import { useInView } from "react-intersection-observer";
 
 const AdvantagesCards = () => {
   const advantageCards = [
@@ -46,17 +45,10 @@ const AdvantagesCards = () => {
     },
   ];
 
-  const [ref, InView] = useInView({
-    threshold: 0.5,
-  });
-
   const advantageItems = advantageCards.map((advantage, index) => (
     <li
-      className={`advantages-cards__item item-${index} ${
-        InView ? "isVisible" : ""
-      }`}
+      className={`advantages-cards__item item-${index}`}
       key={index}
-      ref={ref}
     >
       <div className="advantages-cards-item__img-block">
         <img

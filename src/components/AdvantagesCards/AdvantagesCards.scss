@@ -54,3 +54,40 @@
     }
   }
 }
+
+.advantages-cards__item {
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.View .advantages-cards__item {
+  opacity: 1;
+}
+
+.item {
+  transition-delay: 0s;
+}
+
+.item-1 {
+  transition-delay: 0.2s;
+}
+
+.item-2 {
+  transition-delay: 0.4s;
+}
+
+.item-3 {
+  transition-delay: 0.6s;
+}
+
+.item-4 {
+  transition-delay: 0.8s;
+}
+
+.item-5 {
+  transition-delay: 1s;
+}
+
+.item-6 {
+  transition-delay: 1.2s;
+}

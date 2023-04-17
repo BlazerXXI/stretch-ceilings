@@ -38,7 +38,6 @@
   /* ------------------------ */
   // .header__right-menu
   &__right-menu {
-    position: fixed;
     right: 0;
     top: 0;
     z-index: 33;
@@ -48,6 +47,7 @@
     display: flex;
     align-items: center;
     @media (max-width: 767px) {
+      position: fixed;
       .menu-toggle__open + & {
         background-color: #040404d9;
       }
@@ -62,9 +62,6 @@
   // .header__contact-block
 
   &__contact-block {
-    padding: 0px 10px;
-    margin: 0px -10px;
-    flex-wrap: nowrap;
   }
   // .container
   .container {
@@ -152,6 +149,10 @@
   // .contact-block__item
 
   &__item {
+    padding: 0px 10px;
+    margin: 0px -10px;
+    flex-wrap: nowrap;
+    display: table-row;
     @include font-tel;
   }
 }

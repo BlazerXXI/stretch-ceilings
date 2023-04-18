@@ -1,2 +1,133 @@
 @import "../../scss/_variables.scss";
 @import "../../scss/mixins.scss";
+
+.slick-slider {
+  position: relative;
+  .slick-arrow {
+    position: absolute;
+    top: 25%;
+    z-index: 3;
+  }
+  .slick-prev,
+  .slick-next {
+    color: transparent;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0;
+    transition: all 0.3s ease 0s;
+    &:hover,
+    &:focus {
+      filter: brightness(1.2);
+    }
+  }
+  .slick-prev {
+    background-image: url("../../images/services/arrow2.webp");
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+    background-image: url("../../images/services/arrow1.webp");
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ----------slick-track-------------- */
+
+.slick-track {
+  display: flex;
+  // gap: 60px;
+  & > * {
+    flex: 0 1 33.333%;
+  }
+  .slick-slide {
+    .slick-button-block {
+      text-align: center;
+      .slick-btn-block__btn {
+        min-width: 210px;
+        &::before {
+        }
+      }
+      .slick-item__button-block {
+      }
+    }
+  }
+}
+
+/* ------------------------ */
+
+.slick-slide {
+  // .slick-slide__item
+
+  &__item {
+    text-align: center;
+    & > *:not(:last-child) {
+    }
+  }
+}
+.slick-item {
+  & > *:not(:last-child) {
+    margin: 0px 0px 60px 0px;
+  }
+  // .slick-item__image
+
+  &__image {
+  }
+  .slick-item__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  // .slick-item__text-block
+
+  &__text-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+
+  // .slick-item__price
+
+  &__price {
+  }
+
+  // .slick-item__button-block
+
+  &__button-block {
+  }
+}
+.slick-item-image {
+  // .slick-item-image__img
+
+  &__img {
+  }
+}
+.slick-text-block {
+  // .slick-text-block__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+  }
+
+  // .slick-text-block__subtitle
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}
+.slick-button-block {
+  // .slick-button-block__button
+
+  &__button {
+  }
+}

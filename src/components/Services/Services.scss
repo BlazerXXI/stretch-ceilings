@@ -1,0 +1,11 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/mixins.scss";
+@import "../ServicesSlider/ServicesSlider.scss";
+
+.services {
+  color: $white;
+  margin-top: 52px;
+  @media (max-width: 767px) {
+    margin-top: 100px;
+  }
+}

@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import image1 from "../../images/services/Mask-group.webp";
 import image2 from "../../images/services/Mask-group-1.webp";
 import image3 from "../../images/services/Mask-group-2.webp";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const ServicesSlider = () => {
   const settings = {
@@ -14,43 +13,59 @@ const ServicesSlider = () => {
     slidesToScroll: 3,
     arrows: true,
     accessibility: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const slideContent = [
     {
       img: image1,
-      title: "title",
-      subTitle: "subTitle",
-      price: "price",
+      title: "матові / глянцеві",
+      subTitle: "Натяжні стелі",
+      price: "600",
     },
     {
       img: image2,
-      title: "title",
-      subTitle: "subTitle",
-      price: "price",
+      title: "матові / глянцеві",
+      subTitle: "Натяжні стелі",
+      price: "600",
     },
     {
       img: image3,
-      title: "title",
-      subTitle: "subTitle",
-      price: "price",
+      title: "матові / глянцеві",
+      subTitle: "Натяжні стелі",
+      price: "600",
     },
     {
       img: image1,
-      title: "title",
-      subTitle: "subTitle",
-      price: "price",
+      title: "матові / глянцеві",
+      subTitle: "Натяжні стелі",
+      price: "600",
     },
     {
       img: image2,
-      title: "title",
-      subTitle: "subTitle",
-      price: "price",
+      title: "матові / глянцеві",
+      subTitle: "Натяжні стелі",
+      price: "600",
     },
     {
       img: image3,
-      title: "title",
-      subTitle: "subTitle",
-      price: "price",
+      title: "матові / глянцеві",
+      subTitle: "Натяжні стелі",
+      price: "600",
     },
   ];
   return (

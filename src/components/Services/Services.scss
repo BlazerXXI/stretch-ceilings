@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    @media (max-width: 767px) {
+      gap: 40px;
+    }
   }
 
   // .services__block-title

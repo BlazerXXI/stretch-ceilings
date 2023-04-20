@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Advantages from "./components/Advantages/Advantages";
 import Services from "./components/Services/Services";
+import Guarantee from "./components/Guarantee/Guarantee";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Hero />
         <Advantages />
         <Services />
+        <Guarantee />
       </BrowserRouter>
     </>
   );

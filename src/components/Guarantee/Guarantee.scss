@@ -1,0 +1,10 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/mixins.scss";
+
+.guarantee {
+  color: $white;
+  margin: 180px 0px 0px 0px;
+  @media (max-width: 767px) {
+    margin: 100px 0px 0px 0px;
+  }
+}

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.8682716f.css",
+    "main.css": "/stretch-ceilings/static/css/main.9f747e68.css",
     "main.js": "/stretch-ceilings/static/js/main.d110ca49.js",
     "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
     "static/media/Mask-group-1.webp": "/stretch-ceilings/static/media/Mask-group-1.d6f247f0b1c666abe9cf.webp",
@@ -29,11 +29,11 @@
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
     "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
     "static/media/arrow1.webp": "/stretch-ceilings/static/media/arrow1.1a0ae69dff52e28f3d5e.webp",
-    "main.8682716f.css.map": "/stretch-ceilings/static/css/main.8682716f.css.map",
+    "main.9f747e68.css.map": "/stretch-ceilings/static/css/main.9f747e68.css.map",
     "main.d110ca49.js.map": "/stretch-ceilings/static/js/main.d110ca49.js.map"
   },
   "entrypoints": [
-    "static/css/main.8682716f.css",
+    "static/css/main.9f747e68.css",
     "static/js/main.d110ca49.js"
   ]
 }

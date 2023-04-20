@@ -7,4 +7,33 @@
   @media (max-width: 767px) {
     margin: 100px 0px 0px 0px;
   }
+  // .guarantee__header
+
+  &__header {
+  }
+
+  // .guarantee__title
+
+  @include __title;
+
+
+  // .guarantee__list
+
+  &__list {
+  }
+
+  // .guarantee__item
+
+  &__item {
+  }
+
+  // .guarantee__item-title
+
+  &__item-title {
+  }
+
+  // .guarantee__item-text
+
+  &__item-text {
+  }
 }

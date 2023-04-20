@@ -35,21 +35,9 @@
     @media (min-width: 767px) {
       text-align: left;
     }
-    // font
-    font-size: 30px;
-    line-height: 1.2;
-    text-transform: uppercase;
-
-    @media (min-width: 767px) {
-      font-size: 45px;
-    }
-    /* gradient */
-
-    background: linear-gradient(90deg, #ff8a1e 31.63%, #fff9d8 111.7%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
+  // font
+  @include __title;
 
   // .advantages__cards
 
@@ -67,7 +55,7 @@
           grid-row-gap: 30px;
         }
 
-				.item-0 {
+        .item-0 {
           grid-area: 1 / 1 / 1 / 2;
         }
         .item-1 {

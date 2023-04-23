@@ -31,3 +31,161 @@
 
   @include __title;
 }
+
+///* ------------------------ */ Modal /* ------------------------ */
+
+.modal-block {
+  // .modal-block__bg-image
+  width: 400px;
+  height: 488px;
+  background-color: $white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 20px;
+  @media (max-width: 767px) {
+    width: 345px;
+    padding: 24px 0px 0px 0px;
+  }
+  &__bg-image {
+    position: absolute;
+    background-image: url("../../images/modalServices/sots.svg");
+    width: 385px;
+    height: 281px;
+    top: -80px;
+    right: -242px;
+    z-index: -1;
+  }
+
+  // .modal-block__content-modal
+
+  &__content-modal {
+  }
+}
+.content-modal {
+  position: relative;
+  z-index: 2;
+  // .content-modal__close-button
+  &__close-button {
+    position: absolute;
+    top: 18.69px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 40px;
+    color: #040404;
+    line-height: 20px;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 5px;
+    @media (max-width: 767px) {
+      margin: 21px 0px 0px 0px;
+    }
+  }
+
+  // .content-modal__content-modal
+
+  &__content-modal {
+    margin: 40.39px 0px 0px 0px;
+    @media (max-width: 767px) {
+      margin: 0px 0px;
+    }
+  }
+
+  // .content-modal__title-modal
+
+  &__title-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 767px) {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 80px 0px 80px;
+      text-align: center;
+    }
+  }
+
+  // .content-modal__iputs-block-modal
+
+  &__iputs-block-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 0px 40px 0px;
+    margin: 0px auto;
+    max-width: 250px;
+    @media (max-width: 767px) {
+      padding: 30px 0px 30px 0px;
+    }
+  }
+
+  // .content-modal__button-submit-modal
+
+  &__btn-submit-modal {
+  }
+}
+.title-modal {
+  // .title-modal__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: #040404;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  // .title-modal__text
+
+  &__text {
+    font-weight: 300;
+    font-size: 14.7px;
+    @media (max-width: 767px) {
+    }
+  }
+}
+.iputs-block-modal {
+  // .iputs-block-modal__block-input-modal
+
+  &__block-input-modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+}
+.block-input-modal {
+  // .block-input-modal__input
+
+  &__input {
+    border: 1px solid #040404;
+    padding: 11px;
+    &::placeholder {
+      font-weight: 300;
+      font-size: 15px;
+      color: rgba(4, 4, 4, 0.25);
+    }
+  }
+
+  // .block-input-modal__text
+
+  &__text {
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+.btn-submit-modal {
+  // .btn-submit-modal__btn-submit
+
+  &__btn-submit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px auto;
+    min-width: 200px !important;
+  }
+}

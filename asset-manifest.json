@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.9f747e68.css",
-    "main.js": "/stretch-ceilings/static/js/main.d110ca49.js",
+    "main.css": "/stretch-ceilings/static/css/main.75d24e6a.css",
+    "main.js": "/stretch-ceilings/static/js/main.abd96926.js",
     "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
     "static/media/Mask-group-1.webp": "/stretch-ceilings/static/media/Mask-group-1.d6f247f0b1c666abe9cf.webp",
     "static/media/Mask-group.webp": "/stretch-ceilings/static/media/Mask-group.937f2cea8e1a41152f54.webp",
@@ -14,6 +14,7 @@
     "static/media/Gilroy-Regular.woff2": "/stretch-ceilings/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
     "static/media/Polygon.svg": "/stretch-ceilings/static/media/Polygon.4eb4e297699de996b2a9.svg",
     "static/media/vector-sots.svg": "/stretch-ceilings/static/media/vector-sots.e8c86890e0cdb001c38e.svg",
+    "static/media/sots.svg": "/stretch-ceilings/static/media/sots.ff5c166bd1d0ab4cfd6b.svg",
     "static/media/advIcon.svg": "/stretch-ceilings/static/media/advIcon.fe3d204b125b68abb6547aefb35dc088.svg",
     "static/media/advIcon-4.svg": "/stretch-ceilings/static/media/advIcon-4.788e1cc405c7bcf33e30c8f5552843ff.svg",
     "static/media/vector-sots-top.svg": "/stretch-ceilings/static/media/vector-sots-top.578e90731dd72774b1fd.svg",
@@ -29,11 +30,12 @@
     "static/media/Phone.svg": "/stretch-ceilings/static/media/Phone.5ad420e929e5c714e9dd1b3a79f748f7.svg",
     "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
     "static/media/arrow1.webp": "/stretch-ceilings/static/media/arrow1.1a0ae69dff52e28f3d5e.webp",
-    "main.9f747e68.css.map": "/stretch-ceilings/static/css/main.9f747e68.css.map",
-    "main.d110ca49.js.map": "/stretch-ceilings/static/js/main.d110ca49.js.map"
+    "static/media/list.svg": "/stretch-ceilings/static/media/list.a5256b11b92ecdea7886.svg",
+    "main.75d24e6a.css.map": "/stretch-ceilings/static/css/main.75d24e6a.css.map",
+    "main.abd96926.js.map": "/stretch-ceilings/static/js/main.abd96926.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f747e68.css",
-    "static/js/main.d110ca49.js"
+    "static/css/main.75d24e6a.css",
+    "static/js/main.abd96926.js"
   ]
 }

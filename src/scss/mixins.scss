@@ -30,7 +30,7 @@
 
 @mixin link-active {
   transition: all 0.3s ease 0s;
-  background: linear-gradient(90deg, #ff8a1e 10%, #fff9d8 95%);
+  background: linear-gradient(90deg, #ff8a1e 10%, #fff9d8 137%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,7 +53,7 @@
     line-height: 1.2;
     text-transform: uppercase;
     /* gradient */
-    background: linear-gradient(90deg, #ff8a1e 10%, #fff9d8 35%);
+    background: $primary-color;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

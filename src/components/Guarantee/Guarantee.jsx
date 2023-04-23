@@ -39,29 +39,40 @@ const Guarantee = () => {
   ];
   return (
     <section className="guarantee">
-      <div className="guarantee__header">
-        <h2 className="guarantee__title">гарантія / договір</h2>
+      <div className=" container">
+        <div className="guarantee__header">
+          <h2 className="guarantee__title">гарантія / договір</h2>
+        </div>
+        <div className="guarantee__lists">
+          <ul className="guarantee__list">
+            {guarantee.map((guaranteeItem, index) => {
+              return (
+                <li key={`guarantee-${index}`} className="guarantee__item">
+                  <div>
+                    <h3 className="guarantee__item-title">
+                      {guaranteeItem.title}
+                    </h3>
+                    <p className="guarantee__item-text">{guaranteeItem.text}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+          <ul className="guarantee__list">
+            {deal.map((dealItem, index) => {
+              return (
+                <li key={`deal-${index}`} className="guarantee__item">
+                  <div>
+                    {" "}
+                    <h3 className="guarantee__item-title">{dealItem.title}</h3>
+                    <p className="guarantee__item-text">{dealItem.text}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
-      <ul className="guarantee__list">
-        {guarantee.map((guaranteeItem, index) => {
-          return (
-            <li key={`guarantee-${index}`} className="guarantee__item">
-              <h3 className="guarantee__item-title">{guaranteeItem.title}</h3>
-              <p className="guarantee__item-text">{guaranteeItem.text}</p>
-            </li>
-          );
-        })}
-      </ul>
-      <ul className="guarantee__list">
-        {deal.map((dealItem, index) => {
-          return (
-            <li key={`deal-${index}`} className="guarantee__item">
-              <h3 className="guarantee__item-title">{dealItem.title}</h3>
-              <p className="guarantee__item-text">{dealItem.text}</p>
-            </li>
-          );
-        })}
-      </ul>
     </section>
   );
 };

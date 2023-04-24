@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Advantages from "./components/Advantages/Advantages";
 import Services from "./components/Services/Services";
 import Guarantee from "./components/Guarantee/Guarantee";
+import Gallery from "./components/Gallery/Gallery";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Advantages />
         <Services />
         <Guarantee />
+        <Gallery />
       </BrowserRouter>
     </>
   );

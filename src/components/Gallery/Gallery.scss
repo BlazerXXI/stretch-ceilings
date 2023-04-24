@@ -1,0 +1,30 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.gallery {
+  // .gallery__title-block
+
+  &__title-block {
+  }
+}
+.gallery-container {
+}
+.container {
+}
+.gallery-title-block {
+  // .gallery-title-block__title
+
+  &__title {
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: uppercase;
+
+    /* gradient */
+
+    background: $primary-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stretch-ceilings/static/css/main.98d1a51c.css",
-    "main.js": "/stretch-ceilings/static/js/main.02ac3cd2.js",
+    "main.js": "/stretch-ceilings/static/js/main.2c25358d.js",
     "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
     "static/media/Mask-group-1.webp": "/stretch-ceilings/static/media/Mask-group-1.d6f247f0b1c666abe9cf.webp",
     "static/media/Mask-group.webp": "/stretch-ceilings/static/media/Mask-group.937f2cea8e1a41152f54.webp",
@@ -32,10 +32,10 @@
     "static/media/arrow1.webp": "/stretch-ceilings/static/media/arrow1.1a0ae69dff52e28f3d5e.webp",
     "static/media/list.svg": "/stretch-ceilings/static/media/list.a5256b11b92ecdea7886.svg",
     "main.98d1a51c.css.map": "/stretch-ceilings/static/css/main.98d1a51c.css.map",
-    "main.02ac3cd2.js.map": "/stretch-ceilings/static/js/main.02ac3cd2.js.map"
+    "main.2c25358d.js.map": "/stretch-ceilings/static/js/main.2c25358d.js.map"
   },
   "entrypoints": [
     "static/css/main.98d1a51c.css",
-    "static/js/main.02ac3cd2.js"
+    "static/js/main.2c25358d.js"
   ]
 }

@@ -1,0 +1,18 @@
+@import url(../../scss/_variables.scss);
+@import url(../../scss/mixins.scss);
+
+.slider-gallery {
+  // .slider-gallery__img
+
+  &__img {
+    max-width: 640px;
+    max-height: 520px;
+  }
+  .slick-track {
+    gap: 30px;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+}

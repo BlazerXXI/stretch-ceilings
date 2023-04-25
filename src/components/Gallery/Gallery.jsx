@@ -1,4 +1,5 @@
 import React from "react";
+import GallerySlider from "../GallerySlider/GallerySlider";
 
 const Gallery = () => {
   return (
@@ -7,7 +8,9 @@ const Gallery = () => {
         <div className="gallery__title-block gallery-title-block">
           <h2 className="gallery-title-block__title">Галерея</h2>
         </div>
-        <div className="gallery__slider-block">{/* slick */}</div>
+        <div className="gallery__slider-block">
+          <GallerySlider />
+        </div>
       </div>
     </section>
   );

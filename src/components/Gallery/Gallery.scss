@@ -3,14 +3,15 @@
 
 .gallery {
   // .gallery__title-block
-
+  .container {
+    min-width: 100%;
+  }
   &__title-block {
   }
 }
 .gallery-container {
 }
-.container {
-}
+
 .gallery-title-block {
   // .gallery-title-block__title
 

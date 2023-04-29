@@ -2,19 +2,25 @@
 @import "../../scss/mixins";
 
 .gallery {
-  // .gallery__title-block
+  margin: 109px 0px 0px 0px;
   .container {
     min-width: 100%;
   }
+  // .gallery__title-block
   &__title-block {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0 15px 20px 15px;
   }
 }
-.gallery-container {
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 .gallery-title-block {
   // .gallery-title-block__title
-
   &__title {
     font-weight: 400;
     font-size: 45px;

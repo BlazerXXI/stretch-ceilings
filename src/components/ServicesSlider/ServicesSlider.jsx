@@ -34,39 +34,39 @@ const ServicesSlider = () => {
   const slideContent = [
     {
       img: image1,
-      title: "матові / глянцеві",
+      title: "Матові / Глянцеві",
       subTitle: "Натяжні стелі",
       price: "600",
     },
     {
       img: image2,
-      title: "матові / глянцеві",
+      title: "Лофт",
       subTitle: "Натяжні стелі",
-      price: "600",
+      price: "1400",
     },
     {
       img: image3,
-      title: "матові / глянцеві",
+      title: "Фактурні",
       subTitle: "Натяжні стелі",
-      price: "600",
+      price: "820",
     },
     {
       img: image1,
-      title: "матові / глянцеві",
+      title: "Матові / Глянцеві",
       subTitle: "Натяжні стелі",
       price: "600",
     },
     {
       img: image2,
-      title: "матові / глянцеві",
+      title: "Лофт",
       subTitle: "Натяжні стелі",
-      price: "600",
+      price: "1400",
     },
     {
       img: image3,
-      title: "матові / глянцеві",
+      title: "Фактурні",
       subTitle: "Натяжні стелі",
-      price: "600",
+      price: "820",
     },
   ];
 

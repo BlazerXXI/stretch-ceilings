@@ -5,8 +5,6 @@ import image2 from "../../images/gallery/2.webp";
 import image3 from "../../images/gallery/3.webp";
 
 const GallerySlider = () => {
-  const arrowsContainer = document.querySelector(".slider-arrows");
-
   const settings = {
     dots: false,
     infinite: true,
@@ -15,25 +13,24 @@ const GallerySlider = () => {
     slidesToScroll: 3,
     arrows: true,
     accessibility: true,
-    appendArrows: arrowsContainer,
     responsive: [
       {
-        breakpoint: 4098,
+        breakpoint: 4099,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 1440,
+        breakpoint: 1441,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -42,6 +39,8 @@ const GallerySlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
@@ -89,7 +88,6 @@ const GallerySlider = () => {
 
   return (
     <>
-      <div className="slider-arrows"></div>
       <Slider className="slider-gallery" {...settings}>
         {sliderItems}
       </Slider>

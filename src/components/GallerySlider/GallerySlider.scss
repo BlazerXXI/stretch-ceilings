@@ -5,51 +5,68 @@
   .slider-gallery {
     display: flex;
     flex-direction: column;
-    // .slider-gallery__img
 
     &__img {
       object-fit: cover;
-      max-width: 640px;
-      max-height: 520px;
-      transition: all 0.3s ease 0s;
-      &:hover,
-      &:focus {
-        transition: all 0.3s ease 0s;
-        scale: 1.17;
-      }
-      //
 
-      @media (max-width: 767px) {
-        max-width: 345px;
-        max-height: 345px;
+      transition: all 0.3s ease 0s;
+      @media (min-width: 769px) {
+        max-width: 640px;
+        max-height: 520px;
+        &:hover,
+        &:focus {
+          transition: all 0.3s ease 0s;
+          scale: 1.17;
+        }
       }
+      max-width: 345px;
+      max-height: 345px;
     }
+
     .slick-track {
       display: flex;
       justify-content: center;
       gap: 30px;
     }
+
     .slick-slide {
       display: flex;
       justify-content: center;
       align-items: center;
       min-width: 640px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 769px) {
         min-width: 345px;
       }
     }
   }
+
   .gallery__slider-block {
     margin: 120px 0px 0px 0px;
-    @media (min-width: 767px) {
+
+    @media (min-width: 769px) {
       margin: 140px 0px 0px 0px;
     }
   }
+
   .slick-arrow {
+    position: absolute;
     top: -120px;
-    left: unset;
-    right: unset;
+    margin: 0 20% 0 70%;
+    background-repeat: no-repeat;
+    @media (max-width: 1441px) {
+      margin: 0 10% 0 70%;
+    }
+    @media (max-width: 769px) {
+      margin: 0 10% 0 60%;
+    }
+    .slick-prev {
+    }
+
+    .slick-next {
+    }
+  }
+  .slick-arrow {
     &:focus,
     &:hover {
       opacity: 0.6;
@@ -58,11 +75,38 @@
       opacity: 1;
     }
   }
-  .slick-prev {
-    background-repeat: no-repeat;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin: 0px -50px 28px 0px;
+  display: flex !important;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100px;
+  height: 18px;
+  border-radius: 20px;
+  li {
+    display: flex;
+    align-items: center;
   }
-  .slick-next {
-    background-repeat: no-repeat;
-    margin: 0px 0px 0px 78px;
+  .slick-active {
+    button {
+      transition: all 0.3s ease 0s;
+      background: #ff8a1e;
+    }
+  }
+  button {
+    transition: all 0.3s ease 0s;
+    background: transparent;
+    color: transparent;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background: #dbdbdb;
   }
 }

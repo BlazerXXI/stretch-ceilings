@@ -21,6 +21,10 @@
       }
       max-width: 345px;
       max-height: 345px;
+      @media (max-width: 376px) {
+        max-width: 220px;
+        max-height: 220px;
+      }
     }
 
     .slick-track {
@@ -36,7 +40,7 @@
       min-width: 640px;
 
       @media (max-width: 769px) {
-        min-width: 345px;
+        min-width: 245px;
       }
     }
   }

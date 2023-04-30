@@ -22,8 +22,8 @@
       max-width: 345px;
       max-height: 345px;
       @media (max-width: 376px) {
-        max-width: 220px;
-        max-height: 220px;
+        max-width: 280px;
+        max-height: 280px;
       }
     }
 
@@ -63,11 +63,6 @@
     }
     @media (max-width: 769px) {
       margin: 0 10% 0 60%;
-    }
-    .slick-prev {
-    }
-
-    .slick-next {
     }
   }
   .slick-arrow {

@@ -48,33 +48,45 @@ const GallerySlider = () => {
 
   const imageSlider = [
     {
+      title: "Slott",
       image: image1,
-      description: "This is the first image",
+      description:
+        "Тренд у дизайні інтер’єру. Їх можно робити будь-якої форми : прямі, хаотичні, квардратні , прямокутні  та навіть кутом.В них можна розмістити різне освітлення і втілити свої вподобання завдяки системі “slott”.",
     },
     {
+      title: "Slott",
       image: image2,
-      description: "This is the second image",
+      description:
+        "Тренд у дизайні інтер’єру. Їх можно робити будь-якої форми : прямі, хаотичні, квардратні , прямокутні  та навіть кутом.В них можна розмістити різне освітлення і втілити свої вподобання завдяки системі “slott”.",
     },
     {
+      title: "Slott",
       image: image3,
-      description: "This is the third image",
+      description:
+        "Тренд у дизайні інтер’єру. Їх можно робити будь-якої форми : прямі, хаотичні, квардратні , прямокутні  та навіть кутом.В них можна розмістити різне освітлення і втілити свої вподобання завдяки системі “slott”.",
     },
     {
+      title: "Slott",
       image: image1,
-      description: "This is the first image",
+      description:
+        "Тренд у дизайні інтер’єру. Їх можно робити будь-якої форми : прямі, хаотичні, квардратні , прямокутні  та навіть кутом.В них можна розмістити різне освітлення і втілити свої вподобання завдяки системі “slott”.",
     },
     {
+      title: "Slott",
       image: image2,
-      description: "This is the second image",
+      description:
+        "Тренд у дизайні інтер’єру. Їх можно робити будь-якої форми : прямі, хаотичні, квардратні , прямокутні  та навіть кутом.В них можна розмістити різне освітлення і втілити свої вподобання завдяки системі “slott”.",
     },
     {
+      title: "Slott",
       image: image3,
-      description: "This is the third image",
+      description:
+        "Тренд у дизайні інтер’єру. Їх можно робити будь-якої форми : прямі, хаотичні, квардратні , прямокутні  та навіть кутом.В них можна розмістити різне освітлення і втілити свої вподобання завдяки системі “slott”.",
     },
   ];
 
   const sliderItems = imageSlider.map((item) => (
-    <div key={item.description}>
+    <div className="slider-gallery-item" key={item.description}>
       <img
         className="slider-gallery__img"
         src={item.image}
@@ -82,7 +94,10 @@ const GallerySlider = () => {
         height={520}
         alt={item.description}
       />
-      <p>{item.description}</p>
+      <div className="slider-gallery__description-block">
+        <h3 className="slider-gallery__title">{item.title}</h3>
+        <p className="slider-gallery__description">{item.description}</p>
+      </div>
     </div>
   ));
 

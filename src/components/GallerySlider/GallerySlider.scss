@@ -58,14 +58,17 @@
         line-height: 1.333;
         text-align: center;
         padding: 22px 129px;
-				&>*:not(:last-child) {
-					margin: 0px 0px 15px 0px;
-				}
+        & > *:not(:last-child) {
+          margin: 0px 0px 15px 0px;
+        }
       }
 
       // .slider-gallery__title
 
       &__title {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
       }
 
       // .slider-gallery__description

@@ -4,9 +4,11 @@
 .guarantee {
   color: $white;
   margin: 180px 0px 105px 0px;
+  padding-bottom: 76px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 769px) {
     margin: 100px 0px 0px 0px;
+    padding-bottom: 24px;
   }
   .container {
     position: relative;

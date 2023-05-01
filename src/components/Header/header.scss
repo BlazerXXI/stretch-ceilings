@@ -149,10 +149,6 @@
   // .contact-block__item
 
   &__item {
-    padding: 0px 10px;
-    margin: 0px -10px;
-    flex-wrap: nowrap;
-    display: table-row;
     @include font-tel;
   }
 }

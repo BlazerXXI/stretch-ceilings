@@ -8,9 +8,9 @@ const GallerySlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 900,
+    speed: 600,
     slidesToShow: 6,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
     accessibility: true,
     responsive: [
@@ -24,21 +24,18 @@ const GallerySlider = () => {
         breakpoint: 1441,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 1025,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 769,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           arrows: false,
           dots: true,
         },

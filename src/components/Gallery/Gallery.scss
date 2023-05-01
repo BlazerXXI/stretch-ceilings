@@ -2,7 +2,10 @@
 @import "../../scss/mixins";
 
 .gallery {
-  margin: 109px 0px 0px 0px;
+  margin: 109px 0px 104px 0px;
+  @media (max-width: 769px) {
+    margin: 76px 0px 100px 0px;
+  }
   .container {
     min-width: 100%;
   }

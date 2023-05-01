@@ -13,17 +13,6 @@ import FacebookActive from "../../images/hero/active/Facebook.svg";
 // import modal
 import Modal from "../Modals/Modal";
 
-// active social icons
-const listArrActive = [
-  {
-    img: InstagramActive,
-    link: "/instagram",
-    alt: "Instagram",
-    size: 35,
-  },
-  { img: PhoneActive, link: "/phone", alt: "Phone", size: 35 },
-  { img: FacebookActive, link: "/facebook", alt: "Facebook", size: 35 },
-];
 // social icons array
 const listArr = [
   {
@@ -31,13 +20,30 @@ const listArr = [
     link: "/instagram",
     alt: "Instagram",
     size: 35,
+    activeImg: InstagramActive,
   },
-  { img: Phone, link: "/phone", alt: "Phone", size: 35 },
-  { img: Facebook, link: "/facebook", alt: "Facebook", size: 35 },
+  {
+    img: Phone,
+    link: "/phone",
+    alt: "Phone",
+    size: 35,
+    activeImg: PhoneActive,
+  },
+  {
+    img: Facebook,
+    link: "/facebook",
+    alt: "Facebook",
+    size: 35,
+    activeImg: FacebookActive,
+  },
 ];
 
-
 const Hero = () => {
+  const [activeImage, setActiveImage] = useState(null);
+
+  const handleImageHover = (image) => {
+    setActiveImage(image);
+  };
   return (
     <section className="hero">
       <i className="hero__bg" />
@@ -54,12 +60,21 @@ const Hero = () => {
         </div>
         <div className="hero__social-block">
           <ul className="hero-social__list hero-social-list ">
-            {listArrActive.map((element) => (
+            {listArr.map((element) => (
               <li className="hero-social-list__item" key={element.link}>
-                <Link className="hero-social__link" to={element.link}>
+                <Link
+                  className="hero-social__link"
+                  to={element.link}
+                  onMouseEnter={() => handleImageHover(element.img)}
+                  onMouseLeave={() => setActiveImage(null)}
+                >
                   <img
                     className="hero-social__img"
-                    src={element.img}
+                    src={
+                      activeImage === element.img
+                        ? element.activeImg
+                        : element.img
+                    }
                     alt={element.alt}
                     width={element.size}
                     height={element.size}

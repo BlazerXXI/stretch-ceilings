@@ -41,15 +41,12 @@ const AdvantagesCards = () => {
     {
       src: icon6,
       title: "МЕРЕЖА САЛОНІВ",
-      text: "17 років компанії star deko Завітайте до одного з салонів, який ближче до вас",
+      text: "17 років компанії. Завітайте до одного з салонів, який ближче до вас",
     },
   ];
 
   const advantageItems = advantageCards.map((advantage, index) => (
-    <li
-      className={`advantages-cards__item item-${index}`}
-      key={index}
-    >
+    <li className={`advantages-cards__item item-${index}`} key={index}>
       <div className="advantages-cards-item__img-block">
         <img
           className="advantages-cards-item-block__img"

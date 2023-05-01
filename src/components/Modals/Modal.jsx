@@ -43,7 +43,7 @@ const Modal = () => {
               to="tel:0954169926"
               className="hero-title__popup-content-item__link hero-title__popup-content-item__link--tel"
             >
-              +38 095 416 99 26
+              +38 095 123 12 12
             </Link>
           </div>
         </div>

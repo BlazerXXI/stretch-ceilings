@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // import social icons
 import Instagram from "../../images/hero/Inst.svg";
 import Phone from "../../images/hero/Phone.svg";
 import Facebook from "../../images/hero/Facebook.svg";
+// import active social icons
+import InstagramActive from "../../images/hero/active/Inst.svg";
+import PhoneActive from "../../images/hero/active/Phone.svg";
+import FacebookActive from "../../images/hero/active/Facebook.svg";
+
+// import modal
 import Modal from "../Modals/Modal";
 
+// active social icons
+const listArrActive = [
+  {
+    img: InstagramActive,
+    link: "/instagram",
+    alt: "Instagram",
+    size: 35,
+  },
+  { img: PhoneActive, link: "/phone", alt: "Phone", size: 35 },
+  { img: FacebookActive, link: "/facebook", alt: "Facebook", size: 35 },
+];
 // social icons array
 const listArr = [
   {
@@ -18,6 +35,7 @@ const listArr = [
   { img: Phone, link: "/phone", alt: "Phone", size: 35 },
   { img: Facebook, link: "/facebook", alt: "Facebook", size: 35 },
 ];
+
 
 const Hero = () => {
   return (
@@ -36,7 +54,7 @@ const Hero = () => {
         </div>
         <div className="hero__social-block">
           <ul className="hero-social__list hero-social-list ">
-            {listArr.map((element) => (
+            {listArrActive.map((element) => (
               <li className="hero-social-list__item" key={element.link}>
                 <Link className="hero-social__link" to={element.link}>
                   <img

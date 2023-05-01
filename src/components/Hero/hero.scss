@@ -25,14 +25,14 @@
       width: 440px;
       height: 440px;
       background-size: contain;
-      background-image: url("../../images/hero/logo-transparent.png");
+      // background-image: url("../../images/hero/logo-transparent.png");
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    @media (max-width: 767px) {
-      opacity: 0.7;
+    @media (max-width: 769px) {
+      opacity: 0.5;
       &::before {
         width: 260px;
         height: 260px;

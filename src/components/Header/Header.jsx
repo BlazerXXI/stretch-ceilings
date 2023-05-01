@@ -56,7 +56,7 @@ const Header = () => {
               ))}
               <li className="header__contact-block">
                 <Link to="tel:0954169926" className="contact-block__item">
-                  +38 095 416 99 26
+                  +38 095 123 12 12
                 </Link>
               </li>
             </ul>

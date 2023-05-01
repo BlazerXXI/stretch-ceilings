@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import image1 from "../../images/gallery/1.webp";
-import image2 from "../../images/gallery/2.webp";
-import image3 from "../../images/gallery/3.webp";
+import image1 from "../../images/gallery/1.jpg";
+import image2 from "../../images/gallery/2.jpg";
+import image3 from "../../images/gallery/3.jpg";
 
 const GallerySlider = () => {
   const settings = {

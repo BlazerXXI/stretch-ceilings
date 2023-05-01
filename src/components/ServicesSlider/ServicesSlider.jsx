@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import image1 from "../../images/services/Mask-group.webp";
-import image2 from "../../images/services/Mask-group-1.webp";
-import image3 from "../../images/services/Mask-group-2.webp";
+import image1 from "../../images/services/serv-1.png";
+import image2 from "../../images/services/serv-2.png";
+import image3 from "../../images/services/serv-3.png";
 import { Popup } from "reactjs-popup";
 
 const ServicesSlider = () => {

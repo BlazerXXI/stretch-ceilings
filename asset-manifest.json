@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stretch-ceilings/static/css/main.99aee0bd.css",
-    "main.js": "/stretch-ceilings/static/js/main.fcc33976.js",
+    "main.js": "/stretch-ceilings/static/js/main.a698cce7.js",
     "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
-    "static/media/3.webp": "/stretch-ceilings/static/media/3.b6d074748b07a793328a.webp",
-    "static/media/2.webp": "/stretch-ceilings/static/media/2.6afe911a0a445a308563.webp",
-    "static/media/1.webp": "/stretch-ceilings/static/media/1.68357073815938caea71.webp",
+    "static/media/3.webp": "/stretch-ceilings/static/media/3.4367263a57cb078c0bcb.webp",
+    "static/media/2.webp": "/stretch-ceilings/static/media/2.1f9e8d01b2a73619e8a9.webp",
+    "static/media/1.webp": "/stretch-ceilings/static/media/1.c3ac721f19ddf84a23d5.webp",
     "static/media/Mask-group-1.webp": "/stretch-ceilings/static/media/Mask-group-1.389c711b358c573cd9c6.webp",
+    "static/media/Mask-group-2.webp": "/stretch-ceilings/static/media/Mask-group-2.cc56c3416b4263594620.webp",
     "static/media/Mask-group.webp": "/stretch-ceilings/static/media/Mask-group.55174e9f9c937ed189ea.webp",
-    "static/media/Mask-group-2.webp": "/stretch-ceilings/static/media/Mask-group-2.5dbcf1cc311e8347ea52.webp",
     "static/media/Gilroy-Medium.woff2": "/stretch-ceilings/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
     "static/media/Gilroy-Bold.woff2": "/stretch-ceilings/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
     "static/media/Gilroy-Light.woff2": "/stretch-ceilings/static/media/Gilroy-Light.c2e7a6dc47e5b9a89a37.woff2",
@@ -35,10 +35,10 @@
     "static/media/arrow1.webp": "/stretch-ceilings/static/media/arrow1.1a0ae69dff52e28f3d5e.webp",
     "static/media/list.svg": "/stretch-ceilings/static/media/list.a5256b11b92ecdea7886.svg",
     "main.99aee0bd.css.map": "/stretch-ceilings/static/css/main.99aee0bd.css.map",
-    "main.fcc33976.js.map": "/stretch-ceilings/static/js/main.fcc33976.js.map"
+    "main.a698cce7.js.map": "/stretch-ceilings/static/js/main.a698cce7.js.map"
   },
   "entrypoints": [
     "static/css/main.99aee0bd.css",
-    "static/js/main.fcc33976.js"
+    "static/js/main.a698cce7.js"
   ]
 }

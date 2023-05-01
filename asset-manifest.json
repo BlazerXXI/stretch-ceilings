@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.c1d5d8a4.css",
-    "main.js": "/stretch-ceilings/static/js/main.b0b4d0a0.js",
+    "main.css": "/stretch-ceilings/static/css/main.38abf1fd.css",
+    "main.js": "/stretch-ceilings/static/js/main.8603a771.js",
     "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
     "static/media/3.webp": "/stretch-ceilings/static/media/3.b6d074748b07a793328a.webp",
     "static/media/2.webp": "/stretch-ceilings/static/media/2.6afe911a0a445a308563.webp",
@@ -34,11 +34,11 @@
     "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
     "static/media/arrow1.webp": "/stretch-ceilings/static/media/arrow1.1a0ae69dff52e28f3d5e.webp",
     "static/media/list.svg": "/stretch-ceilings/static/media/list.a5256b11b92ecdea7886.svg",
-    "main.c1d5d8a4.css.map": "/stretch-ceilings/static/css/main.c1d5d8a4.css.map",
-    "main.b0b4d0a0.js.map": "/stretch-ceilings/static/js/main.b0b4d0a0.js.map"
+    "main.38abf1fd.css.map": "/stretch-ceilings/static/css/main.38abf1fd.css.map",
+    "main.8603a771.js.map": "/stretch-ceilings/static/js/main.8603a771.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1d5d8a4.css",
-    "static/js/main.b0b4d0a0.js"
+    "static/css/main.38abf1fd.css",
+    "static/js/main.8603a771.js"
   ]
 }

@@ -6,6 +6,7 @@ import Advantages from "./components/Advantages/Advantages";
 import Services from "./components/Services/Services";
 import Guarantee from "./components/Guarantee/Guarantee";
 import Gallery from "./components/Gallery/Gallery";
+import Premium from "./components/Premium/Premium";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Services />
         <Guarantee />
         <Gallery />
+        <Premium />
       </BrowserRouter>
     </>
   );

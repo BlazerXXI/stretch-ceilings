@@ -1,0 +1,17 @@
+@import "../../scss/variables";
+@import "../../scss/mixins.scss";
+
+.premium {
+  .container {
+  }
+  .video-item {
+    display: flex;
+    justify-content: center;
+  }
+  .video-description {
+  }
+  .slick-arrow {
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+  }
+}

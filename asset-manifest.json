@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/stretch-ceilings/static/css/main.99aee0bd.css",
-    "main.js": "/stretch-ceilings/static/js/main.cf2a36a4.js",
+    "main.css": "/stretch-ceilings/static/css/main.e63576b0.css",
+    "main.js": "/stretch-ceilings/static/js/main.d99b6907.js",
     "static/media/background-hero-section.webp": "/stretch-ceilings/static/media/background-hero-section.2df287ede6ab31f2968c.webp",
     "static/media/3.jpg": "/stretch-ceilings/static/media/3.7112f538562c3a03afdb.jpg",
     "static/media/2.jpg": "/stretch-ceilings/static/media/2.64f5e9fc5769e6036566.jpg",
+    "static/media/video.jpg": "/stretch-ceilings/static/media/video.231c4da29e839b8d506b.jpg",
     "static/media/1.jpg": "/stretch-ceilings/static/media/1.22520060215c068d6b0a.jpg",
     "static/media/serv-2.png": "/stretch-ceilings/static/media/serv-2.d65ecc551feed2aff3ea.png",
     "static/media/serv-1.png": "/stretch-ceilings/static/media/serv-1.d5dec556efcd10c928be.png",
@@ -33,11 +34,11 @@
     "static/media/modal-telephone.svg": "/stretch-ceilings/static/media/modal-telephone.74004ac2de8763106a02.svg",
     "static/media/arrow1.webp": "/stretch-ceilings/static/media/arrow1.1a0ae69dff52e28f3d5e.webp",
     "static/media/list.svg": "/stretch-ceilings/static/media/list.a5256b11b92ecdea7886.svg",
-    "main.99aee0bd.css.map": "/stretch-ceilings/static/css/main.99aee0bd.css.map",
-    "main.cf2a36a4.js.map": "/stretch-ceilings/static/js/main.cf2a36a4.js.map"
+    "main.e63576b0.css.map": "/stretch-ceilings/static/css/main.e63576b0.css.map",
+    "main.d99b6907.js.map": "/stretch-ceilings/static/js/main.d99b6907.js.map"
   },
   "entrypoints": [
-    "static/css/main.99aee0bd.css",
-    "static/js/main.cf2a36a4.js"
+    "static/css/main.e63576b0.css",
+    "static/js/main.d99b6907.js"
   ]
 }

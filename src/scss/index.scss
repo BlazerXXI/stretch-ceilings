@@ -42,6 +42,16 @@ body {
 button {
   font-family: "Montserrat", sans-serif;
 }
+[class*="section-title"] {
+	font-weight: 400;
+	font-size: 45px;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #ff8a1e 31.63%, #fff9d8 111.7%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 [class*="__btn"] {
   & {
     position: relative;

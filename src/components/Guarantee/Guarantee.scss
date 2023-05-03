@@ -42,8 +42,6 @@
 
   // .guarantee__title
 
-  @include __title;
-
   // .guarantee__lists
   &__lists {
     @media (max-width: 767px) {

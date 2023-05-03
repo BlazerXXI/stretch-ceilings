@@ -13,7 +13,7 @@ const Advantages = () => {
         <div className="advantages__polygon">
           <i />
         </div>
-        <div className="advantages__title">
+        <div className="advantages__title section-title">
           <h2>Переваги компанії</h2>
         </div>
         <div className={`advantages__cards ${InView ? "View" : ""}`} ref={ref}>

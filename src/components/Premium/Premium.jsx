@@ -11,6 +11,16 @@ const Premium = () => {
     slidesToScroll: 1,
     arrows: true,
     accessibility: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   };
 
   const videoArr = [
@@ -42,10 +52,12 @@ const Premium = () => {
     <section className="premium">
       <div className="container">
         <div>
-          <div>
-            <h2>Преміум матеріали</h2>
+          <div className="premium__title-block premium-title-block">
+            <h2 className="premium-title-block__title section-title">
+              Преміум матеріали
+            </h2>
           </div>
-          <div>
+          <div className="premium__slider-block premium-slider-block">
             <Slider {...settings}>{videoSlide}</Slider>
           </div>
         </div>

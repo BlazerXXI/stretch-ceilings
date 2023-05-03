@@ -41,7 +41,7 @@ const Guarantee = () => {
     <section className="guarantee">
       <div className=" container">
         <div className="guarantee__header">
-          <h2 className="guarantee__title">гарантія / договір</h2>
+          <h2 className="guarantee__title section-title">гарантія / договір</h2>
         </div>
         <div className="guarantee__lists">
           <ul className="guarantee__list">

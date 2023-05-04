@@ -1,12 +1,12 @@
 @import "../../scss/variables";
 @import "../../scss/mixins.scss";
 
-.premium {
+.materials {
   position: relative;
   &::after {
     content: "";
     position: absolute;
-    background: url("../../images/premium/sots.svg");
+    background: url("../../images/materials/sots.svg");
     min-width: 955px;
     min-height: 696px;
     top: -105px;
@@ -20,8 +20,8 @@
     }
   }
 
-  .premium-title-block {
-    // .premium-title-block__title
+  .materials-title-block {
+    // .materials-title-block__title
 
     &__title {
       margin: 0px 0px 60px 0px;
@@ -49,7 +49,7 @@
       transform: translate(-50%, -50%);
       min-width: 160px;
       min-height: 160px;
-      background-image: url("../../images/premium/Play.webp");
+      background-image: url("../../images/materials/Play.webp");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;

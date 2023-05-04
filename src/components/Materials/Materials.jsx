@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import videoItem from "../../images/premium/video.jpg";
+import videoItem from "../../images/materials/video.jpg";
 
-const Premium = () => {
+const Materials = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -49,15 +49,15 @@ const Premium = () => {
     </div>
   ));
   return (
-    <section className="premium">
+    <section className="materials">
       <div className="container">
         <div>
-          <div className="premium__title-block premium-title-block">
-            <h2 className="premium-title-block__title section-title">
+          <div className="materials__title-block materials-title-block">
+            <h2 className="materials-title-block__title section-title">
               Преміум матеріали
             </h2>
           </div>
-          <div className="premium__slider-block premium-slider-block">
+          <div className="materials__slider-block materials-slider-block">
             <Slider {...settings}>{videoSlide}</Slider>
           </div>
         </div>
@@ -66,4 +66,4 @@ const Premium = () => {
   );
 };
 
-export default Premium;
+export default Materials;

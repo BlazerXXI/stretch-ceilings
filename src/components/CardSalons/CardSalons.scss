@@ -1,0 +1,72 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/variables";
+
+.salons-cards {
+  // .salons-cards__item
+
+  &__item {
+  }
+}
+.salons-item {
+  @include fontTitle;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  // .salons-item__image
+
+  &__image {
+    margin: 0px 0px 15px 0px;
+    min-width: 345px;
+    min-height: 260px;
+  }
+
+  // .salons-item__address
+
+  &__address {
+    font-style: normal;
+  }
+
+  // .salons-item__timetable
+
+  &__timetable {
+  }
+
+  // .salons-item__telephone
+
+  &__telephone {
+  }
+}
+
+.salons-item {
+  // .salons-item__timetable
+
+  &__timetable {
+    * {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+.salons-timetable {
+  // .salons-timetable__timetable
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 400;
+
+  &__timetable {
+  }
+
+  // .salons-timetable__weekend
+
+  &__weekend {
+  }
+}
+
+.salons-address {
+  // .salons-address__text
+
+  &__text {
+  }
+}

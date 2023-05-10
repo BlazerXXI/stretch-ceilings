@@ -6,6 +6,11 @@
   line-height: 1.15;
 }
 
+@mixin fontTitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+
 // tel num or
 @mixin font-tel {
   font-family: $Gilroy;

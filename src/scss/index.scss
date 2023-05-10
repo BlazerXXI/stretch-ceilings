@@ -9,6 +9,8 @@
 @import url("../components/Gallery/Gallery.scss");
 @import url("../components/GallerySlider/GallerySlider.scss");
 @import url("../components/Materials/Materials.scss");
+@import url("../components/Salons/Salons.scss");
+@import url("../components/CardSalons/CardSalons.scss");
 @import "./variables";
 @import "./mixins";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -43,13 +45,13 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 [class*="section-title"] {
-	font-weight: 400;
-	font-size: 45px;
-	text-transform: uppercase;
-	background: linear-gradient(90deg, #ff8a1e 31.63%, #fff9d8 111.7%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+  font-weight: 400;
+  font-size: 45px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff8a1e 31.63%, #fff9d8 111.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 [class*="__btn"] {

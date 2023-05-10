@@ -7,6 +7,7 @@ import Services from "./components/Services/Services";
 import Guarantee from "./components/Guarantee/Guarantee";
 import Gallery from "./components/Gallery/Gallery";
 import Materials from "./components/Materials/Materials";
+import Salons from "./components/Salons/Salons";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Guarantee />
         <Gallery />
         <Materials />
+        <Salons />
       </BrowserRouter>
     </>
   );

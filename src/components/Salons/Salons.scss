@@ -1,3 +1,25 @@
-* {
+@import "../../scss/mixins.scss";
+@import "../../scss/variables";
+
+.salons {
   color: #ffffff;
+
+  // .salons__title-block
+
+  &__title-block {
+    margin: 0px 0px 40px 0px;
+  }
+}
+.container {
+}
+.salons-title {
+  // .salons-title__title
+
+  &__title {
+  }
+}
+.salons-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }

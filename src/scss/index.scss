@@ -52,6 +52,10 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  @media (max-width: 769px) {
+    text-align: center;
+    font-size: 30px;
+  }
 }
 
 [class*="__btn"] {
@@ -69,10 +73,12 @@ button {
     font-size: 18px;
     line-height: 1.22;
 
-    @media (max-width: 767px) {
-      font-size: 16px;
+    @media (max-width: 769px) {
+      margin: 0px auto;
+      font-size: 18px;
       line-height: 1.25;
       min-width: 295px;
+      max-width: 295px;
     }
   }
 

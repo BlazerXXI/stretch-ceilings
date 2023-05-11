@@ -1,14 +1,22 @@
 import React from "react";
 
 const CardSalons = (props) => {
-  const { cardKey, image, locate, timetable, weekend, phoneNum, phoneText } =
-    props;
+  const {
+    cardKey,
+    image,
+    name,
+    locate,
+    timetable,
+    weekend,
+    phoneNum,
+    phoneText,
+  } = props;
   return (
     <li key={cardKey} className="salons-cards__item salons-item">
       <img
         className="salons-item__image"
         src={image}
-        alt={"Зображення " + locate}
+        alt={"Зображення " + name}
       />
       <address className="salons-item__address salons-address">
         <p className="salons-address__text">{locate}</p>
@@ -20,6 +28,7 @@ const CardSalons = (props) => {
       <a className="salons-item__telephone" href={"tel:" + phoneNum}>
         {phoneText}
       </a>
+      <p className="salons-item__btn">Салон {cardKey}</p>
     </li>
   );
 };

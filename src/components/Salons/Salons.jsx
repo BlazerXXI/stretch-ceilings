@@ -11,6 +11,7 @@ const cardArray = [
   {
     id: 1,
     image: images.image1,
+    name: "Салони компанії",
     locate: "пр-т. Героїв Харкова, 257 паркування «РОСТ»",
     timetable: "Пн-Сб: 09.00-19.00",
     weekend: "Вихідний : неділя",
@@ -20,6 +21,7 @@ const cardArray = [
   {
     id: 2,
     image: images.image2,
+    name: "Салони компанії",
     locate: "пр-т. Науки, 43 «EXPRESS» 2 етаж",
     timetable: "Пн-Сб: 09.00-19.00",
     weekend: "Вихідний : неділя",
@@ -29,6 +31,7 @@ const cardArray = [
   {
     id: 3,
     image: images.image3,
+    name: "Салони компанії",
     locate: "пр-т. ул.Героїв Праці, 7 «ТРЦ КАРАВАН» ( за ескалатором )",
     timetable: "Пн-Сб: 09.00-19.00",
     weekend: "Вихідний : неділя",
@@ -41,13 +44,14 @@ const Salons = () => (
   <section className="salons">
     <div className="container">
       <div className="salons__title-block salons-title">
-        <h3 className="salons-title__title">Салони компанії</h3>
+        <h3 className="salons-title__title section-title">Салони компанії</h3>
       </div>
       <ul className="salons-cards">
         {cardArray.map((element) => (
           <CardSalons
             cardKey={element.id}
             image={element.image}
+            name={element.name}
             locate={element.locate}
             timetable={element.timetable}
             weekend={element.weekend}

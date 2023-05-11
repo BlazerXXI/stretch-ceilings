@@ -12,6 +12,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-align: center;
+  > *:not(:first-child) {
+    max-width: 265px;
+    margin: 0px auto;
+  }
+
   // .salons-item__image
 
   &__image {
@@ -29,31 +35,30 @@
   // .salons-item__timetable
 
   &__timetable {
+    font-weight: 400;
+    opacity: 0.8;
   }
 
   // .salons-item__telephone
 
   &__telephone {
   }
-}
 
-.salons-item {
-  // .salons-item__timetable
+  // .salons-item__btn
 
-  &__timetable {
-    * {
-      font-size: 16px;
-      font-weight: 400;
-    }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+
 .salons-timetable {
   // .salons-timetable__timetable
+
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-size: 16px;
-  font-weight: 400;
 
   &__timetable {
   }

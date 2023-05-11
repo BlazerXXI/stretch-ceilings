@@ -11,16 +11,17 @@
 @import url("../components/Materials/Materials.scss");
 @import url("../components/Salons/Salons.scss");
 @import url("../components/CardSalons/CardSalons.scss");
+@import url("../components/Map/Map.scss");
 @import "./variables";
 @import "./mixins";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-Regular.woff2") format(woff2);
-  src: url("../assets/fonts/Gilroy-Medium.woff2") format(woff2);
-  src: url("../assets/fonts/Gilroy-Light.woff2") format(woff2);
-  src: url("../assets/fonts/Gilroy-Bold.woff2") format(woff2);
+  src: url("../assets/fonts/Gilroy-Regular.ttf") format(ttf);
+  src: url("../assets/fonts/Gilroy-Medium.ttf") format(ttf);
+  src: url("../assets/fonts/Gilroy-Light.ttf") format(ttf);
+  src: url("../assets/fonts/Gilroy-Bold.ttf") format(ttf);
   font-display: swap;
 }
 

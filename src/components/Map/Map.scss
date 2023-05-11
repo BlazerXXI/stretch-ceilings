@@ -1,0 +1,12 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/mixins.scss";
+
+.map {
+  @media (max-width: 769px) {
+    text-align: center;
+    img {
+      max-width: 345px;
+      max-height: 246px;
+    }
+  }
+}

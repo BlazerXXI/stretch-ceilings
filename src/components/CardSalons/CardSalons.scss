@@ -2,6 +2,13 @@
 @import "../../scss/variables";
 
 .salons-cards {
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
   // .salons-cards__item
 
   &__item {
@@ -18,12 +25,33 @@
     margin: 0px auto;
   }
 
+  @media (min-width: 769px) {
+    gap: 20px;
+    font-size: 20px;
+    > *:not(:first-child) {
+      max-width: none;
+    }
+    & > *:first-child {
+      margin: 0px 0px 40px 0px;
+    }
+    & > *:last-child {
+      margin-top: 40px;
+    }
+  }
+
   // .salons-item__image
 
   &__image {
     margin: 0px 0px 15px 0px;
     min-width: 345px;
     min-height: 260px;
+    max-width: 345px;
+    max-height: 260px;
+    margin: 0px auto;
+
+    @media (min-width: 769px) {
+      max-width: 380px;
+    }
   }
 
   // .salons-item__address
@@ -50,6 +78,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 769px) {
+      min-width: 159.66px !important;
+    }
   }
 }
 

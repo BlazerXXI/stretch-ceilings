@@ -2,7 +2,6 @@
 @import url(../../scss/mixins.scss);
 
 .gallery {
-  padding: 0px 0px 23px 0px;
   .slick-slide {
     transition: all 0.3s ease 0s;
     @media (min-width: 769px) {
@@ -91,14 +90,11 @@
   }
 
   .gallery__slider-block {
-    margin: 40px 0px 100px 0px;
-    @media (min-width: 769px) {
-      margin: 140px 0px 138px 0px;
-    }
   }
 
   .slick-arrow {
     position: absolute;
+    z-index: 120;
     top: -112px;
     margin: 0 20% 0 70%;
     background-repeat: no-repeat;

@@ -8,19 +8,23 @@ import Guarantee from "./components/Guarantee/Guarantee";
 import Gallery from "./components/Gallery/Gallery";
 import Materials from "./components/Materials/Materials";
 import Salons from "./components/Salons/Salons";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Header />
-        <Hero />
-        <Advantages />
-        <Services />
-        <Guarantee />
-        <Gallery />
-        <Materials />
-        <Salons />
+        <main>
+          <Hero />
+          <Advantages />
+          <Services />
+          <Guarantee />
+          <Gallery />
+          <Materials />
+          <Salons />
+        </main>
+        <Footer />
       </BrowserRouter>
     </>
   );

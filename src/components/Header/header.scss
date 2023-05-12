@@ -10,16 +10,7 @@
   color: $white;
   overflow-x: visible;
   z-index: 5;
-  // .header__logo-block
 
-  &__logo-block {
-    @media (max-width: 767px) {
-      img {
-        width: 60px;
-        height: 60px;
-      }
-    }
-  }
   /* -----------OVERLAY------------- */
   .overlay {
     position: fixed;

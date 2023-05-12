@@ -17,21 +17,21 @@ import Modal from "../Modals/Modal";
 const listArr = [
   {
     img: Instagram,
-    link: "/instagram",
+    link: "https://www.instagram.com/",
     alt: "Instagram",
     size: 35,
     activeImg: InstagramActive,
   },
   {
     img: Phone,
-    link: "/phone",
+    link: "tel:0951231212",
     alt: "Phone",
     size: 35,
     activeImg: PhoneActive,
   },
   {
     img: Facebook,
-    link: "/facebook",
+    link: "https://www.facebook.com",
     alt: "Facebook",
     size: 35,
     activeImg: FacebookActive,
@@ -63,6 +63,8 @@ const Hero = () => {
             {listArr.map((element) => (
               <li className="hero-social-list__item" key={element.link}>
                 <Link
+                  target="_blank"
+									rel="noopener noreferrer nofollow"
                   className="hero-social__link"
                   to={element.link}
                   onMouseEnter={() => handleImageHover(element.img)}

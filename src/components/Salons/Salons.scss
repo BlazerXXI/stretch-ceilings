@@ -4,6 +4,9 @@
 .salons {
   color: #ffffff;
   margin: 0px 0px 180px 0px;
+  @media (max-width: 769px) {
+    margin: 0px 0px 80px 0px;
+  }
   // .salons__title-block
 
   &__title-block {

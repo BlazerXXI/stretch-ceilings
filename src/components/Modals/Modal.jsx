@@ -40,7 +40,7 @@ const Modal = () => {
         <div className="popup-content">
           <div className="hero-title__popup-content-item">
             <Link
-              to="tel:0954169926"
+              to="tel:0951231212"
               className="hero-title__popup-content-item__link hero-title__popup-content-item__link--tel"
             >
               +38 095 123 12 12

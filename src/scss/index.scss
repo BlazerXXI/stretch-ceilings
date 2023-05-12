@@ -12,6 +12,7 @@
 @import url("../components/Salons/Salons.scss");
 @import url("../components/CardSalons/CardSalons.scss");
 @import url("../components/Map/Map.scss");
+@import url("../components/Footer/Footer.scss");
 @import "./variables";
 @import "./mixins";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -56,6 +57,15 @@ button {
   @media (max-width: 769px) {
     text-align: center;
     font-size: 30px;
+  }
+}
+
+[class*="__logo-block"] {
+  @media (max-width: 767px) {
+    img {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 

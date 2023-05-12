@@ -1,13 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import logo from "../../images/header/logo.png";
 import { Link } from "react-router-dom";
+import LogoImg from "../LogoImg/LogoImg";
 
-const logoAlt = "Натяжні стелі Star Deko";
 const listArr = [
-  {
-    name: "Переваги компанії",
-    link: "/advantages",
-  },
+  { name: "Переваги компанії", link: "/advantages" },
   { name: "Галерея", link: "/gallery" },
   { name: "Послуги / товари", link: "/services" },
   { name: "Салони компанії", link: "/salons" },
@@ -35,12 +31,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header" ref={headerRef}>
+    <header className="header" id="header" ref={headerRef}>
       <div className="container">
         <div className="header__logo-block">
-          <Link to="./stretch-ceilings/">
-            <img width={100} height={100} src={logo} alt={logoAlt} />
-          </Link>
+          <LogoImg />
         </div>
         <div className="header__right-menu">
           <nav className="header__nav">
@@ -55,7 +49,7 @@ const Header = () => {
                 </li>
               ))}
               <li className="header__contact-block">
-                <Link to="tel:0954169926" className="contact-block__item">
+                <Link to="tel:0951231212" className="contact-block__item">
                   +38 095 123 12 12
                 </Link>
               </li>

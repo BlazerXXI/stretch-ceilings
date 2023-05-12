@@ -8,7 +8,7 @@ const Advantages = () => {
   });
 
   return (
-    <section className="advantages">
+    <section id="advantages" className="advantages">
       <div className="container">
         <div className="advantages__polygon">
           <i />

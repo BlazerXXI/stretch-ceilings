@@ -71,58 +71,11 @@ const ServicesSlider = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [nameError, setNameError] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [phoneError, setPhoneError] = useState("");
 
   const handleOpen = () => setIsOpen(true);
 
   const handleClose = () => {
     setIsOpen(false);
-    setName("");
-    setEmail("");
-    setPhone("");
-    setNameError("");
-    setEmailError("");
-    setPhoneError("");
-  };
-
-  const validateForm = () => {
-    let isValid = true;
-
-    if (name.trim() === "") {
-      setNameError("Please enter your name");
-      isValid = false;
-    }
-
-    if (email.trim() === "") {
-      setEmailError("Please enter your email");
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      setEmailError("Please enter a valid email");
-      isValid = false;
-    }
-
-    if (phone.trim() === "") {
-      setPhoneError("Please enter your phone number");
-      isValid = false;
-    } else if (!/^\d{10}$/.test(phone)) {
-      setPhoneError("Please enter a valid 10-digit phone number");
-      isValid = false;
-    }
-
-    return isValid;
-  };
-
-  const handleSubmit = () => {
-    if (validateForm()) {
-      console.log("Form submitted successfully");
-    } else {
-			console.log("Form validation failed");
-    }
   };
 
   return (
@@ -155,8 +108,6 @@ const ServicesSlider = () => {
                       className="block-input-modal__input"
                       type="text"
                       placeholder="Ваше ім’я"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
                     />
                     <input
                       name="phone"
@@ -164,8 +115,6 @@ const ServicesSlider = () => {
                       className="block-input-modal__input"
                       type="text"
                       placeholder="Номер телефону"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
                     />
                     <input
                       name="email"
@@ -173,8 +122,6 @@ const ServicesSlider = () => {
                       className="block-input-modal__input"
                       type="text"
                       placeholder="Email*"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <p className="block-input-modal__text">
@@ -183,8 +130,7 @@ const ServicesSlider = () => {
                 </div>
                 <div className="content-modal__button-submit-modal">
                   <button
-                    // type="submit"
-                    onClick={handleSubmit}
+                    type="button"
                     className="btn-submit-modal__btn-submit"
                   >
                     Відправити

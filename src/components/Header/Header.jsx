@@ -14,10 +14,8 @@ const Header = () => {
 
   const toggleNav = () => {
     if (window.innerWidth <= 769) {
-      console.log("ok ", window.innerWidth);
       setIsNavOpen(!isNavOpen);
     } else {
-      console.log(window.innerWidth);
       return;
     }
   };

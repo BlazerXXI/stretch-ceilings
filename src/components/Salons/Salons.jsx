@@ -47,12 +47,10 @@ const cardArray = [
 const Salons = () => {
   const [salonId, setSalonId] = useState(null);
 
-  useEffect(() => {
-    console.log(salonId);
-  }, [salonId]);
+  useEffect(() => {}, [salonId]);
 
   return (
-    <section className="salons">
+    <section id="salons" className="salons">
       <div className="container">
         <div className="salons__title-block salons-title">
           <h3 className="salons-title__title section-title">Салони компанії</h3>

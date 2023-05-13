@@ -45,7 +45,7 @@ const Hero = () => {
     setActiveImage(image);
   };
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <i className="hero__bg" />
       <div className="container">
         <div className="hero__title-block">
@@ -64,7 +64,7 @@ const Hero = () => {
               <li className="hero-social-list__item" key={element.link}>
                 <Link
                   target="_blank"
-									rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer nofollow"
                   className="hero-social__link"
                   to={element.link}
                   onMouseEnter={() => handleImageHover(element.img)}

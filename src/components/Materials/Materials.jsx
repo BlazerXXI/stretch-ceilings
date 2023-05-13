@@ -49,7 +49,7 @@ const Materials = () => {
     </div>
   ));
   return (
-    <section className="materials">
+    <section id="materials" className="materials">
       <div className="container">
         <div>
           <div className="materials__title-block materials-title-block">

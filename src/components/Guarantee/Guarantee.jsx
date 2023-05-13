@@ -38,7 +38,7 @@ const Guarantee = () => {
     },
   ];
   return (
-    <section className="guarantee">
+    <section id="guarantee" className="guarantee">
       <div className=" container">
         <div className="guarantee__header">
           <h2 className="guarantee__title section-title">гарантія / договір</h2>

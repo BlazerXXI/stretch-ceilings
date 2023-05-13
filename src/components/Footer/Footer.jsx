@@ -1,6 +1,6 @@
 import React from "react";
 import LogoImg from "../LogoImg/LogoImg";
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   const footerMenu = [
@@ -39,9 +39,9 @@ const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <div className="container">
-        <Link to="#header" className="up-btn__link">
+        <a href="#header" className="up-btn__link">
           <i className="up-btn"></i>
-        </Link>
+        </a>
         <div className="footer__logo-block">
           <LogoImg />
         </div>
@@ -49,17 +49,17 @@ const Footer = () => {
           <ul className="footer__nav-list">
             {footerMenu.map((item) => (
               <li key={item.id} className="footer__nav-item">
-                <Link to={item.link} className="footer__nav-link">
+                <a href={item.link} className="footer__nav-link">
                   {item.text}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
         </nav>
         <div className="contact-block">
-          <Link to="tel:0951231212" className="contact__block-item">
+          <a href="tel:0951231212" className="contact__block-item">
             +38 095 123 12 12
-          </Link>
+          </a>
           <p className="footer__all-rights-reserved">
             Всі права захищені, 2022
           </p>

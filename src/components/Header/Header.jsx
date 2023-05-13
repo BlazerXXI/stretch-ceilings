@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import LogoImg from "../LogoImg/LogoImg";
 
 const listArr = [
-  { name: "Переваги компанії", link: "/advantages" },
-  { name: "Галерея", link: "/gallery" },
-  { name: "Послуги / товари", link: "/services" },
-  { name: "Салони компанії", link: "/salons" },
+  { name: "Переваги компанії", link: "#advantages" },
+  { name: "Галерея", link: "#gallery" },
+  { name: "Послуги / товари", link: "#services" },
+  { name: "Салони компанії", link: "#salons" },
 ];
 
 const Header = () => {
@@ -45,13 +44,13 @@ const Header = () => {
             >
               {listArr.map((element) => (
                 <li className="nav-list__item" key={element.link}>
-                  <Link to={element.link}>{element.name}</Link>
+                  <a href={element.link}>{element.name}</a>
                 </li>
               ))}
               <li className="header__contact-block">
-                <Link to="tel:0951231212" className="contact-block__item">
+                <a href="tel:0951231212" className="contact-block__item">
                   +38 095 123 12 12
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

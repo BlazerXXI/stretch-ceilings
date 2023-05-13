@@ -3,7 +3,7 @@ import ServicesSlider from "../ServicesSlider/ServicesSlider";
 
 const Services = () => {
   return (
-    <section className="services">
+    <section id="services" className="services">
       <div className="container">
         <div className="services__block-title">
           <h2 className="services-block-title__title ">Послуги / товари</h2>

@@ -25,7 +25,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      @media (max-width: 767px) {
+      @media (max-width: 769px) {
         rotate: 90deg;
         top: 172px;
         left: 0;
@@ -35,7 +35,7 @@
   // .guarantee__header
   &__header {
     margin: 0px 0px 59px 0px;
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
       margin: 0px 0px 40px 0px;
     }
   }
@@ -44,7 +44,7 @@
 
   // .guarantee__lists
   &__lists {
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
       display: flex;
       flex-direction: column;
       gap: 30px;

@@ -13,7 +13,13 @@ const Header = () => {
   const headerRef = useRef(null);
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    if (window.innerWidth <= 769) {
+      console.log("ok ", window.innerWidth);
+      setIsNavOpen(!isNavOpen);
+    } else {
+      console.log(window.innerWidth);
+      return;
+    }
   };
 
   const handleClickOutside = (event) => {
@@ -29,6 +35,23 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const anchors = document.querySelectorAll('a[href*="#"]');
+
+    for (let anchor of anchors) {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const blockID = anchor.getAttribute("href").substr(1);
+
+        document.getElementById(blockID).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    }
+  });
+
   return (
     <header className="header" id="header" ref={headerRef}>
       <div className="container">
@@ -43,7 +66,11 @@ const Header = () => {
               }`}
             >
               {listArr.map((element) => (
-                <li className="nav-list__item" key={element.link}>
+                <li
+                  onClick={toggleNav}
+                  className="nav-list__item"
+                  key={element.link}
+                >
                   <a href={element.link}>{element.name}</a>
                 </li>
               ))}

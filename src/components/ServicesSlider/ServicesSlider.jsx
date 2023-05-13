@@ -71,11 +71,58 @@ const ServicesSlider = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
   const handleOpen = () => setIsOpen(true);
 
   const handleClose = () => {
     setIsOpen(false);
+    setName("");
+    setEmail("");
+    setPhone("");
+    setNameError("");
+    setEmailError("");
+    setPhoneError("");
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+
+    if (name.trim() === "") {
+      setNameError("Please enter your name");
+      isValid = false;
+    }
+
+    if (email.trim() === "") {
+      setEmailError("Please enter your email");
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setEmailError("Please enter a valid email");
+      isValid = false;
+    }
+
+    if (phone.trim() === "") {
+      setPhoneError("Please enter your phone number");
+      isValid = false;
+    } else if (!/^\d{10}$/.test(phone)) {
+      setPhoneError("Please enter a valid 10-digit phone number");
+      isValid = false;
+    }
+
+    return isValid;
+  };
+
+  const handleSubmit = () => {
+    if (validateForm()) {
+      console.log("Form submitted successfully");
+    } else {
+			console.log("Form validation failed");
+    }
   };
 
   return (
@@ -99,31 +146,51 @@ const ServicesSlider = () => {
                   Ми зв’яжемося з вами для оформлення замовлення
                 </p>
               </div>
-              <div className="content-modal__iputs-block-modal">
-                <div className="iputs-block-modal__block-input-modal">
-                  <input
-                    className="block-input-modal__input"
-                    type="text"
-                    placeholder="Ваше ім’я"
-                  />
-                  <input
-                    className="block-input-modal__input"
-                    type="text"
-                    placeholder="Номер телефону"
-                  />
-                  <input
-                    className="block-input-modal__input"
-                    type="text"
-                    placeholder="Email*"
-                  />
+              <form>
+                <div className="content-modal__iputs-block-modal">
+                  <div className="iputs-block-modal__block-input-modal">
+                    <input
+                      name="name"
+                      id="name"
+                      className="block-input-modal__input"
+                      type="text"
+                      placeholder="Ваше ім’я"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                    <input
+                      name="phone"
+                      id="phone"
+                      className="block-input-modal__input"
+                      type="text"
+                      placeholder="Номер телефону"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
+                    <input
+                      name="email"
+                      id="email"
+                      className="block-input-modal__input"
+                      type="text"
+                      placeholder="Email*"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </div>
+                  <p className="block-input-modal__text">
+                    *не обов’язкове поле
+                  </p>
                 </div>
-                <p className="block-input-modal__text">*не обов’язкове поле</p>
-              </div>
-              <div className="content-modal__button-submit-modal">
-                <button className="btn-submit-modal__btn-submit">
-                  Відправити
-                </button>
-              </div>
+                <div className="content-modal__button-submit-modal">
+                  <button
+                    // type="submit"
+                    onClick={handleSubmit}
+                    className="btn-submit-modal__btn-submit"
+                  >
+                    Відправити
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

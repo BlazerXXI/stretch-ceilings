@@ -5,7 +5,7 @@ const logoAlt = "Натяжні стелі Star Deko";
 
 const LogoImg = () => {
   return (
-    <Link to="/">
+    <Link to="/stretch-ceilings/">
       <img width={100} height={100} src={logo} alt={logoAlt} />
     </Link>
   );

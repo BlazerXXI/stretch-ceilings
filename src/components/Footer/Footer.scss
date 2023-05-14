@@ -6,7 +6,10 @@
   color: $white;
   text-align: center;
   overflow: hidden;
-  padding-top: 20px;
+  padding-top: 50px;
+  @media (max-width: 769px) {
+    padding-top: 20px;
+  }
   &::before {
     content: "";
     position: absolute;

@@ -22,7 +22,7 @@ const Map = (salonId) => {
   }
 
   return (
-    <div className="map">
+    <div className="map" id="map">
       <a href={mapLink} target="_blank" rel="noreferrer noopener nofollow">
         <img src={img} alt="" />
       </a>

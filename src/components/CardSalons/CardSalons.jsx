@@ -14,8 +14,13 @@ const CardSalons = (props) => {
     setSalonId,
   } = props;
 
+  const scrollToMap = () => {
+    const mapElement = document.getElementById("map");
+    mapElement.scrollIntoView({ behavior: "smooth" });
+  };
   const handleSalon = () => {
     setSalonId(cardKey);
+    scrollToMap();
   };
 
   return (

@@ -78,6 +78,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $black !important;
+    transition: all 0.3s ease 0s;
 
     @media (min-width: 769px) {
       min-width: 159.66px !important;

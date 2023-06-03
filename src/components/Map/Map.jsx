@@ -23,7 +23,14 @@ const Map = (salonId) => {
 
   return (
     <div className="map" id="map">
-      <a href={mapLink} target="_blank" rel="noreferrer noopener nofollow">
+      <a
+        href={
+          mapLink ||
+          "https://www.google.com/maps/place/STAR+DEKO+%D0%9D%D0%B0%D1%82%D1%8F%D0%B6%D0%BD%D1%8B%D0%B5+%D0%9F%D0%BE%D1%82%D0%BE%D0%BB%D0%BA%D0%B8+Gallery/@49.9668737,36.3207718,17z/data=!4m10!1m2!2m1!1zc3RhciBkZWtvINCz0LXRgNC-0LXQsiDQpdCw0YDRjNC60L7QstCwIDI1Nw!3m6!1s0x4127a11e3571bc11:0xb358dfad40571e28!8m2!3d49.9668046!4d36.3207657!15sCitzdGFyIGRla28g0LPQtdGA0L7QtdCyINCl0LDRgNGM0LrQvtCy0LAgMjU3Wi0iK3N0YXIgZGVrbyDQs9C10YDQvtC10LIg0YXQsNGA0YzQutC-0LLQsCAyNTeSAQ5yZXBhaXJfc2VydmljZZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VORE5uTjFSa3AzRUFF4AEA!16s%2Fg%2F11g0zr5hxs"
+        }
+        target="_blank"
+        rel="noreferrer noopener nofollow"
+      >
         <img src={img} alt="" />
       </a>
     </div>
